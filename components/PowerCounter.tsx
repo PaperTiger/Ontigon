@@ -36,7 +36,7 @@ export function PowerCounter() {
   }, []);
 
   const para: React.CSSProperties = {
-    fontSize: 'clamp(15px,1.25vw,18px)',
+    fontSize: 'clamp(14px,1.1vw,16px)',
     lineHeight: 1.7,
     color: C.body,
     maxWidth: '42ch',

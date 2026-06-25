@@ -90,7 +90,7 @@ export default function ResultsPage() {
         <Reveal
           as="p"
           delay={120}
-          style={{ fontSize: 'clamp(16px,1.5vw,21px)', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: 0 }}
+          style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: 0 }}
         >
           Every claim has a falsifier: an experiment designed to show the result
           is wrong. 484 certification scripts. 300+ certified claims. If
@@ -130,7 +130,7 @@ export default function ResultsPage() {
             <BarRow cols="160px 1fr 72px" name="With sleep arch." fill={100} color={C.ink} value="100%" />
             <BarRow cols="160px 1fr 72px" name="Without sleep" fill={15} color={C.decor} value="15%" dim />
           </div>
-          <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(16px,1.6vw,21px)', lineHeight: 1.45, color: C.body, maxWidth: '42ch', margin: 0 }}>
+          <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.45, color: C.body, maxWidth: '42ch', margin: 0 }}>
             The 85-point gap is not incidental. Sleep is causally load-bearing.
           </p>
         </Reveal>
@@ -197,7 +197,7 @@ export default function ResultsPage() {
               </div>
             </div>
           </div>
-          <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(16px,1.6vw,21px)', lineHeight: 1.45, color: C.body, maxWidth: '38ch', margin: '32px 0 0' }}>
+          <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.45, color: C.body, maxWidth: '38ch', margin: '32px 0 0' }}>
             This was not the goal. It is what the geometry produced.
           </p>
         </Reveal>

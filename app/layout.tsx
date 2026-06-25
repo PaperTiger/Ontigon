@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning>
         <div style={{ position: 'relative', background: '#f1f1f2', minHeight: '100vh' }}>
           <Nav />
           {children}

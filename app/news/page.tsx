@@ -82,7 +82,7 @@ export default function NewsPage() {
         <Reveal
           as="p"
           delay={120}
-          style={{ fontSize: 'clamp(16px,1.5vw,20px)', lineHeight: 1.7, color: C.body, maxWidth: '52ch', margin: 0 }}
+          style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '52ch', margin: 0 }}
         >
           We publish when there&apos;s something real to say. <br />
           No noise. Below is the record.
@@ -112,7 +112,7 @@ export default function NewsPage() {
               484 certification scripts. 300+ certified claims. What the program
               is and why it exists.
             </h2>
-            <p style={{ fontSize: 'clamp(15px,1.3vw,18px)', lineHeight: 1.7, color: C.body, maxWidth: '52ch', margin: '0 0 28px' }}>
+            <p style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '52ch', margin: '0 0 28px' }}>
               The certification methodology isn&apos;t just a list of results.
               It&apos;s a falsification program. Every claim has a script
               designed to prove it wrong. Here&apos;s how it works and what

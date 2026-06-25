@@ -3,7 +3,7 @@ import { HopfHero } from '@/components/HopfHero';
 import { PowerCounter } from '@/components/PowerCounter';
 import { SphereCanvas } from '@/components/SphereCanvas';
 import { Reveal } from '@/components/motion';
-import { C, mono, sans } from '@/lib/ui';
+import { C, mono, sans, display2 } from '@/lib/ui';
 
 const verdictLine: React.CSSProperties = {
   fontFamily: sans,
@@ -89,7 +89,7 @@ export default function HomePage() {
             as="p"
             delay={120}
             style={{
-              fontSize: 'clamp(16px,1.5vw,21px)',
+              fontSize: 'clamp(14px,1.1vw,16px)',
               lineHeight: 1.7,
               color: 'rgba(255,255,255,.62)',
               maxWidth: '62ch',
@@ -182,6 +182,28 @@ export default function HomePage() {
               </Reveal>
             ))}
           </div>
+          <Reveal
+            delay={240}
+            style={{
+              marginTop: 'clamp(40px,6vh,72px)',
+              paddingTop: 'clamp(32px,4vh,56px)',
+              borderTop: '1px solid rgba(255,255,255,.1)',
+            }}
+          >
+            <p
+              style={{
+                fontFamily: sans,
+                fontWeight: 200,
+                fontSize: 'clamp(22px,2.8vw,42px)',
+                lineHeight: 1.1,
+                letterSpacing: '-.015em',
+                color: 'rgba(255,255,255,.48)',
+                margin: 0,
+              }}
+            >
+              Quantum computing has been ten years away for fifty years.
+            </p>
+          </Reveal>
         </div>
       </section>
 
@@ -217,41 +239,34 @@ export default function HomePage() {
                 marginBottom: 28,
               }}
             >
-              03 / The result
+              03 / The answer
             </Reveal>
             <Reveal
               as="h2"
               delay={60}
               style={{
-                fontFamily: sans,
-                fontWeight: 200,
-                fontSize: 'clamp(32px,4.6vw,66px)',
-                lineHeight: 1.04,
-                letterSpacing: '-.02em',
+                ...display2,
                 margin: '0 0 36px',
-                maxWidth: '16ch',
               }}
             >
-              Quantum computing has been ten years away for fifty years.
+              The universal quantum gate set. Running on commodity hardware today.
             </Reveal>
             <Reveal
               as="p"
               delay={120}
               style={{
-                fontSize: 'clamp(15px,1.35vw,19px)',
+                fontSize: 'clamp(14px,1.1vw,16px)',
                 lineHeight: 1.75,
                 color: '#cbcbcf',
                 maxWidth: '46ch',
                 margin: '0 0 48px',
               }}
             >
-              The hardware is fragile, operates near absolute zero, and requires
-              error-correction overhead that consumes most of its advantage. The
-              results it promises are real. The timeline is not. We didn&apos;t
-              wait: by deriving intelligence from pure geometry, the universal
-              quantum gate set fell out of the structure as a consequence. Not a
-              simulation. Not an approximation. The same computational class,
-              running on the commodity GPU hardware that exists today.
+              By deriving intelligence from pure geometry, the universal quantum
+              gate set fell out of the structure as a consequence. Not a
+              simulation. Not an approximation. The same computational class as
+              quantum — without the fragile hardware, the near-absolute-zero
+              cooling, or the error-correction overhead.
               <br />
               <br />
               <span style={{ fontSize: '17.874px' }}>

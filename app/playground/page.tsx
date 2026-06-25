@@ -52,7 +52,7 @@ export default function PlaygroundPage() {
         <Reveal
           as="p"
           delay={120}
-          style={{ fontSize: 'clamp(16px,1.5vw,21px)', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: 0 }}
+          style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: 0 }}
         >
           Interactive demos run directly against the substrate. No slides, no
           hand-waving. Open one and watch the geometry behave. New demos are

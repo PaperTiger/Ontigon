@@ -43,7 +43,7 @@ export default function RoadmapPage() {
         <Reveal as="h1" delay={60} style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(48px,10vw,150px)', lineHeight: 0.96, letterSpacing: '-.025em', margin: '0 0 40px' }}>
           Where we&apos;re going.
         </Reveal>
-        <Reveal as="p" delay={120} style={{ fontSize: 'clamp(16px,1.5vw,21px)', lineHeight: 1.7, color: C.body, maxWidth: '56ch', margin: 0 }}>
+        <Reveal as="p" delay={120} style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '56ch', margin: 0 }}>
           This is a working research program, not a product roadmap. These are
           the open questions and the sequence in which the geometry forces us to
           answer them.
@@ -80,14 +80,14 @@ export default function RoadmapPage() {
             <Dot style={{ background: '#f1f1f2', border: `2px solid ${C.ink}` }} />
             <div style={stageLabel(C.mute)}>Active research frontier</div>
             <h2 style={{ ...stageHead, margin: '0 0 16px' }}>Physical interpretation of the geometry</h2>
-            <p style={{ fontSize: 'clamp(15px,1.3vw,18px)', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: '0 0 28px' }}>
+            <p style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: '0 0 28px' }}>
               The geometric derivation is proven. The link between the
               substrate&apos;s topology and its full physical interpretation,
               specifically, the mass-energy correspondence and the binding
               dynamics at scale: that is the open question. We say this because it
               is true.
             </p>
-            <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(15px,1.4vw,19px)', lineHeight: 1.5, color: C.mute2, maxWidth: '44ch', margin: 0 }}>
+            <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.5, color: C.mute2, maxWidth: '44ch', margin: 0 }}>
               The geometry is right. We are proving the last link in the chain.
             </p>
           </Reveal>
@@ -118,7 +118,7 @@ export default function RoadmapPage() {
             <h2 style={{ ...stageHead, margin: '0 0 16px', color: '#787880' }}>
               A substrate that doesn&apos;t need scale.
             </h2>
-            <p style={{ fontSize: 'clamp(15px,1.3vw,18px)', lineHeight: 1.7, color: C.mute, maxWidth: '56ch', margin: '0 0 40px' }}>
+            <p style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.mute, maxWidth: '56ch', margin: '0 0 40px' }}>
               When the geometry and physics are fully unified, the compute cost
               becomes a function of the topology, not the parameter count. That is
               the end state. We are not there yet. We know the shape of the path.

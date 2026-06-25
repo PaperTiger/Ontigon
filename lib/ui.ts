@@ -53,9 +53,19 @@ export const display = (size: string): CSSProperties => ({
   margin: 0,
 });
 
+/** Secondary display heading — use like a "display-2" class. */
+export const display2: CSSProperties = {
+  fontFamily: sans,
+  fontWeight: 200,
+  fontSize: 'clamp(24px,2.6vw,40px)',
+  lineHeight: 1.08,
+  letterSpacing: '-.02em',
+  margin: 0,
+};
+
 /** Standard body paragraph on light backgrounds. */
 export const body: CSSProperties = {
-  fontSize: 'clamp(16px,1.4vw,20px)',
+  fontSize: 'clamp(14px,1.1vw,16px)',
   lineHeight: 1.7,
   color: C.body,
 };

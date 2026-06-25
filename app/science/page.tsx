@@ -12,7 +12,7 @@ const twoCol: React.CSSProperties = {
 };
 
 const colBody: React.CSSProperties = {
-  fontSize: 'clamp(16px,1.4vw,20px)',
+  fontSize: 'clamp(14px,1.1vw,16px)',
   lineHeight: 1.7,
   color: C.body,
   maxWidth: '58ch',
@@ -297,7 +297,7 @@ export default function SciencePage() {
             as="p"
             delay={120}
             style={{
-              fontSize: 'clamp(15px,1.3vw,18px)',
+              fontSize: 'clamp(14px,1.1vw,16px)',
               lineHeight: 1.7,
               color: C.mute2,
               maxWidth: '52ch',

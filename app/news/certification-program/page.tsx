@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { C, mono, sans, ctaSolid } from '@/lib/ui';
 
 const para: React.CSSProperties = {
-  fontSize: 'clamp(16px,1.4vw,20px)',
+  fontSize: 'clamp(14px,1.1vw,16px)',
   lineHeight: 1.75,
   color: C.body,
 };
@@ -37,7 +37,7 @@ export default function ArticlePage() {
           484 certification scripts. 300+ certified claims. What the program is
           and why it exists.
         </h1>
-        <p style={{ fontSize: 'clamp(16px,1.5vw,20px)', lineHeight: 1.7, color: C.body, margin: 0 }}>By the Ontigon team.</p>
+        <p style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, margin: 0 }}>By the Ontigon team.</p>
       </section>
 
       <div style={{ maxWidth: 860, margin: '0 auto', padding: '0 clamp(20px,5vw,64px) clamp(80px,12vh,160px)' }}>

@@ -153,7 +153,9 @@ export function Nav() {
               style={{
                 ...navLinkStyle(aboutActive),
                 background: 'transparent',
-                border: 0,
+                borderTop: 0,
+                borderLeft: 0,
+                borderRight: 0,
                 borderBottom: navLinkStyle(aboutActive).borderBottom,
                 fontFamily: 'inherit',
                 display: 'flex',
