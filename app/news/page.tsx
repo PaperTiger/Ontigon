@@ -131,7 +131,7 @@ export default function NewsPage() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill,minmax(min(100%,340px),1fr))',
+            gridTemplateColumns: 'repeat(2,1fr)',
             gap: 1,
             background: 'rgba(26,25,22,.1)',
             borderLeft: '1px solid rgba(26,25,22,.1)',
