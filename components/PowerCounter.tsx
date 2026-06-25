@@ -36,7 +36,7 @@ export function PowerCounter() {
   }, []);
 
   const para: React.CSSProperties = {
-    fontSize: 'clamp(14px,1.1vw,16px)',
+    fontSize: 'clamp(12px,1.1vw,16px)',
     lineHeight: 1.7,
     color: C.body,
     maxWidth: '42ch',
@@ -72,7 +72,7 @@ export function PowerCounter() {
             maxWidth: 1320,
             margin: '0 auto',
             width: '100%',
-            padding: '0 clamp(20px,5vw,64px)',
+            padding: '0 clamp(32px,5vw,64px)',
           }}
         >
           <div>
@@ -83,7 +83,7 @@ export function PowerCounter() {
                 letterSpacing: '.26em',
                 color: C.mute,
                 textTransform: 'uppercase',
-                marginBottom: 28,
+                marginBottom: 24,
               }}
             >
               01 / The problem
@@ -92,22 +92,22 @@ export function PowerCounter() {
               style={{
                 fontFamily: sans,
                 fontWeight: 200,
-                fontSize: 'clamp(30px,4.4vw,60px)',
+                fontSize: 'clamp(28px,4.4vw,65px)',
                 lineHeight: 1.04,
                 letterSpacing: '-.02em',
-                margin: '0 0 28px',
+                margin: '0 0 24px',
                 maxWidth: '16ch',
               }}
             >
               The industry has a geometry problem.
             </h2>
-            <p style={{ ...para, margin: '0 0 18px' }}>
+            <p style={{ ...para, margin: '0 0 16px' }}>
               Your brain runs on twenty watts. A dim light bulb. It reads,
               remembers, reasons through novel situations, all within a
               biological energy budget that hasn&apos;t changed in 150 million
               years.
             </p>
-            <p style={{ ...para, margin: '0 0 18px' }}>
+            <p style={{ ...para, margin: '0 0 16px' }}>
               A single AI training run costs enough electricity to power a small
               city for a year. The industry&apos;s answer is to build nuclear
               reactors. Specifically for this.
@@ -120,17 +120,17 @@ export function PowerCounter() {
           <div
             style={{
               borderLeft: `1px solid ${C.hairStrong}`,
-              paddingLeft: 'clamp(20px,3vw,48px)',
+              paddingLeft: 'clamp(24px,3vw,48px)',
             }}
           >
             <div
               style={{
                 fontFamily: mono,
-                fontSize: 11.5,
+                fontSize: 12,
                 letterSpacing: '.14em',
                 color: C.mute,
                 textTransform: 'uppercase',
-                marginBottom: 10,
+                marginBottom: 8,
               }}
             >
               A single AI training run, kWh
@@ -139,7 +139,7 @@ export function PowerCounter() {
               style={{
                 fontFamily: sans,
                 fontWeight: 200,
-                fontSize: 'clamp(40px,6vw,96px)',
+                fontSize: 'clamp(37px,6vw,96px)',
                 lineHeight: 0.92,
                 letterSpacing: '-.03em',
                 fontVariantNumeric: 'tabular-nums',
@@ -154,7 +154,7 @@ export function PowerCounter() {
                 height: 2,
                 background: C.ink,
                 width: `${pct.toFixed(1)}%`,
-                margin: '22px 0 56px',
+                margin: '24px 0 64px',
                 transition: 'width .12s linear',
               }}
             />
@@ -162,7 +162,7 @@ export function PowerCounter() {
               style={{
                 display: 'flex',
                 alignItems: 'baseline',
-                gap: 18,
+                gap: 16,
                 opacity: 0.9,
               }}
             >
@@ -170,7 +170,7 @@ export function PowerCounter() {
                 style={{
                   fontFamily: sans,
                   fontWeight: 200,
-                  fontSize: 'clamp(34px,4vw,52px)',
+                  fontSize: 'clamp(37px,4vw,49px)',
                   lineHeight: 1,
                   letterSpacing: '-.02em',
                 }}
@@ -180,7 +180,7 @@ export function PowerCounter() {
               <div
                 style={{
                   fontFamily: mono,
-                  fontSize: 11.5,
+                  fontSize: 12,
                   letterSpacing: '.08em',
                   color: C.mute,
                   lineHeight: 1.5,
@@ -194,10 +194,10 @@ export function PowerCounter() {
             <div
               style={{
                 fontFamily: mono,
-                fontSize: 11,
+                fontSize: 12,
                 letterSpacing: '.08em',
                 color: C.decor,
-                marginTop: 36,
+                marginTop: 32,
                 lineHeight: 1.6,
               }}
             >

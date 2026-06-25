@@ -8,17 +8,17 @@ import { C, mono, sans, display2 } from '@/lib/ui';
 const verdictLine: React.CSSProperties = {
   fontFamily: sans,
   fontWeight: 200,
-  fontSize: 'clamp(20px,2.8vw,44px)',
+  fontSize: 'clamp(21px,2.8vw,49px)',
   lineHeight: 1.08,
   letterSpacing: '-.015em',
   color: '#fff',
   margin: 0,
-  padding: 'clamp(18px,2.5vh,32px) 0',
+  padding: 'clamp(16px,2.5vh,32px) 0',
 };
 
 const cardNum: React.CSSProperties = {
   fontFamily: mono,
-  fontSize: 11,
+  fontSize: 12,
   letterSpacing: '.16em',
   color: 'rgba(255,255,255,.28)',
   marginBottom: 22,
@@ -27,14 +27,14 @@ const cardNum: React.CSSProperties = {
 const cardHead: React.CSSProperties = {
   fontFamily: sans,
   fontWeight: 400,
-  fontSize: 'clamp(22px,2.2vw,30px)',
+  fontSize: 'clamp(21px,2.2vw,28px)',
   lineHeight: 1.1,
   margin: '0 0 16px',
   color: '#fff',
 };
 
 const cardBody: React.CSSProperties = {
-  fontSize: 14.5,
+  fontSize: 16,
   lineHeight: 1.65,
   color: 'rgba(255,255,255,.72)',
   margin: 0,
@@ -53,7 +53,7 @@ export default function HomePage() {
           background: '#0a0a0b',
           borderTop: '1px solid rgba(255,255,255,.08)',
           padding:
-            'clamp(80px,14vh,180px) clamp(20px,5vw,64px) clamp(48px,6vh,72px)',
+            'clamp(80px,14vh,192px) clamp(32px,5vw,64px) clamp(48px,6vh,64px)',
         }}
       >
         <div style={{ maxWidth: 1320, margin: '0 auto' }}>
@@ -64,7 +64,7 @@ export default function HomePage() {
               letterSpacing: '.26em',
               color: 'rgba(255,255,255,.35)',
               textTransform: 'uppercase',
-              marginBottom: 28,
+              marginBottom: 24,
             }}
           >
             02 / The diagnosis
@@ -75,7 +75,7 @@ export default function HomePage() {
             style={{
               fontFamily: sans,
               fontWeight: 200,
-              fontSize: 'clamp(34px,5.5vw,82px)',
+              fontSize: 'clamp(37px,5.5vw,87px)',
               lineHeight: 1.02,
               letterSpacing: '-.02em',
               color: '#fff',
@@ -93,7 +93,7 @@ export default function HomePage() {
               lineHeight: 1.7,
               color: 'rgba(255,255,255,.62)',
               maxWidth: '62ch',
-              margin: '0 0 56px',
+              margin: '0 0 64px',
             }}
           >
             Every calculation a transformer makes happens in public, across
@@ -137,7 +137,7 @@ export default function HomePage() {
         style={{
           background: '#0a0a0b',
           padding:
-            'clamp(56px,8vh,100px) clamp(20px,5vw,64px) clamp(80px,14vh,180px)',
+            'clamp(48px,8vh,96px) clamp(32px,5vw,64px) clamp(80px,14vh,192px)',
         }}
       >
         <div style={{ maxWidth: 1320, margin: '0 auto' }}>
@@ -174,7 +174,7 @@ export default function HomePage() {
               <Reveal
                 key={c.n}
                 delay={c.d}
-                style={{ background: '#0a0a0b', padding: 'clamp(28px,3vw,44px)' }}
+                style={{ background: '#0a0a0b', padding: 'clamp(32px,3vw,48px)' }}
               >
                 <div style={cardNum}>{c.n}</div>
                 <h3 style={cardHead}>{c.h}</h3>
@@ -185,8 +185,8 @@ export default function HomePage() {
           <Reveal
             delay={240}
             style={{
-              marginTop: 'clamp(40px,6vh,72px)',
-              paddingTop: 'clamp(32px,4vh,56px)',
+              marginTop: 'clamp(40px,6vh,64px)',
+              paddingTop: 'clamp(32px,4vh,48px)',
               borderTop: '1px solid rgba(255,255,255,.1)',
             }}
           >
@@ -194,7 +194,7 @@ export default function HomePage() {
               style={{
                 fontFamily: sans,
                 fontWeight: 200,
-                fontSize: 'clamp(22px,2.8vw,42px)',
+                fontSize: 'clamp(21px,2.8vw,49px)',
                 lineHeight: 1.1,
                 letterSpacing: '-.015em',
                 color: 'rgba(255,255,255,.48)',
@@ -214,7 +214,7 @@ export default function HomePage() {
           borderTop: `1px solid ${C.hair}`,
           background: '#1a1a1c',
           color: '#f1f1f2',
-          padding: 'clamp(80px,14vh,180px) clamp(20px,5vw,64px)',
+          padding: 'clamp(80px,14vh,192px) clamp(32px,5vw,64px)',
         }}
       >
         <div
@@ -223,8 +223,8 @@ export default function HomePage() {
             maxWidth: 1320,
             margin: '0 auto',
             display: 'grid',
-            gridTemplateColumns: '1.05fr .95fr',
-            gap: 'clamp(32px,5vw,80px)',
+            gridTemplateColumns: '7fr 5fr',
+            gap: 'clamp(32px,5vw,64px)',
             alignItems: 'start',
           }}
         >
@@ -236,7 +236,7 @@ export default function HomePage() {
                 letterSpacing: '.26em',
                 color: '#7a7a82',
                 textTransform: 'uppercase',
-                marginBottom: 28,
+                marginBottom: 24,
               }}
             >
               03 / The answer
@@ -246,7 +246,7 @@ export default function HomePage() {
               delay={60}
               style={{
                 ...display2,
-                margin: '0 0 36px',
+                margin: '0 0 32px',
               }}
             >
               The universal quantum gate set. Running on commodity hardware today.
@@ -269,14 +269,14 @@ export default function HomePage() {
               cooling, or the error-correction overhead.
               <br />
               <br />
-              <span style={{ fontSize: '17.874px' }}>
+              <span style={{ fontSize: 16 }}>
                 We weren&apos;t trying to build a quantum computer. The geometry
                 produced it.
               </span>
             </Reveal>
             <Reveal
               delay={260}
-              style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}
+              style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}
             >
               <Link
                 href="/science"
@@ -286,7 +286,7 @@ export default function HomePage() {
                   color: '#fff',
                   fontSize: 13.5,
                   letterSpacing: '.02em',
-                  padding: '13px 24px',
+                  padding: '16px 24px',
                   borderRadius: 1,
                 }}
               >
@@ -300,7 +300,7 @@ export default function HomePage() {
                   color: '#fff',
                   fontSize: 13.5,
                   letterSpacing: '.02em',
-                  padding: '13px 24px',
+                  padding: '16px 24px',
                   borderRadius: 1,
                 }}
               >
@@ -385,7 +385,7 @@ export default function HomePage() {
         style={{
           position: 'relative',
           overflow: 'hidden',
-          padding: 'clamp(80px,14vh,200px) clamp(20px,5vw,64px)',
+          padding: 'clamp(80px,14vh,192px) clamp(32px,5vw,64px)',
           background: '#f1f1f2',
         }}
       >
@@ -411,7 +411,7 @@ export default function HomePage() {
               display: 'flex',
               flexWrap: 'wrap',
               justifyContent: 'flex-start',
-              gap: '8px 36px',
+              gap: '8px 32px',
               fontFamily: mono,
               fontSize: 12,
               letterSpacing: '.08em',
@@ -433,10 +433,10 @@ export default function HomePage() {
             style={{
               fontFamily: sans,
               fontWeight: 200,
-              fontSize: 'clamp(38px,7vw,104px)',
+              fontSize: 'clamp(37px,7vw,87px)',
               lineHeight: 1,
               letterSpacing: '-.02em',
-              margin: '0 0 36px',
+              margin: '0 0 32px',
               maxWidth: '18ch',
               textAlign: 'left',
             }}
@@ -449,11 +449,11 @@ export default function HomePage() {
             style={{
               fontFamily: sans,
               fontWeight: 200,
-              fontSize: 'clamp(18px,2vw,26px)',
+              fontSize: 'clamp(16px,2vw,28px)',
               lineHeight: 1.5,
               color: C.body,
               maxWidth: '34ch',
-              margin: '0 0 41px',
+              margin: '0 0 40px',
               textAlign: 'left',
             }}
           >
@@ -468,9 +468,9 @@ export default function HomePage() {
                 display: 'inline-block',
                 background: '#1a1a1c',
                 color: '#f1f1f2',
-                fontSize: 15,
+                fontSize: 16,
                 letterSpacing: '.02em',
-                padding: '18px 36px',
+                padding: '16px 32px',
                 borderRadius: 1,
               }}
             >

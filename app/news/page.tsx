@@ -65,7 +65,7 @@ export default function NewsPage() {
       <section
         style={{
           padding:
-            'clamp(130px,20vh,220px) clamp(20px,5vw,64px) clamp(56px,8vh,100px)',
+            'clamp(128px,20vh,192px) clamp(32px,5vw,64px) clamp(48px,8vh,96px)',
           maxWidth: 1320,
           margin: '0 auto',
           borderBottom: `1px solid ${C.hair}`,
@@ -82,14 +82,14 @@ export default function NewsPage() {
         <Reveal
           as="p"
           delay={120}
-          style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '52ch', margin: 0 }}
+          style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '52ch', margin: 0 }}
         >
           We publish when there&apos;s something real to say. <br />
           No noise. Below is the record.
         </Reveal>
       </section>
 
-      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 clamp(20px,5vw,64px) clamp(80px,12vh,160px)' }}>
+      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 clamp(32px,5vw,64px) clamp(80px,12vh,160px)' }}>
         {/* Featured / latest */}
         <Reveal
           as="article"
@@ -97,28 +97,28 @@ export default function NewsPage() {
           style={{
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
-            gap: 'clamp(24px,4vw,72px)',
+            gap: 'clamp(24px,4vw,64px)',
             alignItems: 'start',
-            padding: 'clamp(56px,8vh,100px) 0',
+            padding: 'clamp(48px,8vh,96px) 0',
             borderBottom: `1px solid ${C.hair}`,
           }}
         >
           <div>
             <div style={{ display: 'flex', gap: 16, alignItems: 'center', marginBottom: 22, flexWrap: 'wrap' }}>
-              <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: '.14em', color: '#fff', background: C.ink, padding: '4px 10px' }}>RESEARCH</span>
-              <time style={{ fontFamily: mono, fontSize: 11, letterSpacing: '.08em', color: C.mute }}>June 2026</time>
+              <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.14em', color: '#fff', background: C.ink, padding: '4px 10px' }}>RESEARCH</span>
+              <time style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.08em', color: C.mute }}>June 2026</time>
             </div>
-            <h2 style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(26px,3.2vw,48px)', lineHeight: 1.06, letterSpacing: '-.02em', margin: '0 0 20px' }}>
+            <h2 style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(28px,3.2vw,49px)', lineHeight: 1.06, letterSpacing: '-.02em', margin: '0 0 20px' }}>
               484 certification scripts. 300+ certified claims. What the program
               is and why it exists.
             </h2>
-            <p style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '52ch', margin: '0 0 28px' }}>
+            <p style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '52ch', margin: '0 0 28px' }}>
               The certification methodology isn&apos;t just a list of results.
               It&apos;s a falsification program. Every claim has a script
               designed to prove it wrong. Here&apos;s how it works and what
               it&apos;s produced.
             </p>
-            <Link href="/news/certification-program" style={{ cursor: 'pointer', fontSize: 14, letterSpacing: '.02em', borderBottom: `1px solid ${C.ink}`, paddingBottom: 2 }}>
+            <Link href="/news/certification-program" style={{ cursor: 'pointer', fontSize: 16, letterSpacing: '.02em', borderBottom: `1px solid ${C.ink}`, paddingBottom: 2 }}>
               Read the results&nbsp;→
             </Link>
           </div>
@@ -148,19 +148,19 @@ export default function NewsPage() {
               style={{
                 cursor: 'pointer',
                 background: '#f1f1f2',
-                padding: 'clamp(26px,2.8vw,38px)',
+                padding: 'clamp(24px,2.8vw,40px)',
                 display: 'flex',
                 flexDirection: 'column',
               }}
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 18, gap: 12, flexWrap: 'wrap' }}>
-                <span style={{ fontFamily: mono, fontSize: 10.5, letterSpacing: '.14em', color: C.mute, border: '1px solid rgba(26,25,22,.18)', padding: '3px 8px' }}>{a.cat}</span>
-                <time style={{ fontFamily: mono, fontSize: 10.5, letterSpacing: '.06em', color: C.decor }}>{a.date}</time>
+                <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.14em', color: C.mute, border: '1px solid rgba(26,25,22,.18)', padding: '3px 8px' }}>{a.cat}</span>
+                <time style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.06em', color: C.decor }}>{a.date}</time>
               </div>
-              <h3 style={{ fontFamily: sans, fontWeight: 300, fontSize: 'clamp(18px,1.8vw,24px)', lineHeight: 1.15, letterSpacing: '-.01em', margin: '0 0 12px' }}>
+              <h3 style={{ fontFamily: sans, fontWeight: 300, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.15, letterSpacing: '-.01em', margin: '0 0 12px' }}>
                 {a.title}
               </h3>
-              <p style={{ fontSize: 14, lineHeight: 1.65, color: C.mute2, margin: '0 0 20px', flex: 1 }}>{a.body}</p>
+              <p style={{ fontSize: 16, lineHeight: 1.65, color: C.mute2, margin: '0 0 20px', flex: 1 }}>{a.body}</p>
               <span style={{ fontSize: 12.5, letterSpacing: '.04em', color: C.ink, borderBottom: '1px solid rgba(26,26,28,.25)', paddingBottom: 2, alignSelf: 'flex-start' }}>
                 {a.cta}&nbsp;→
               </span>
@@ -170,10 +170,10 @@ export default function NewsPage() {
 
         {/* CTA row */}
         <Reveal style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 24, paddingTop: 48 }}>
-          <p style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(17px,1.8vw,24px)', lineHeight: 1.4, color: C.body, maxWidth: '32ch', margin: 0 }}>
+          <p style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.4, color: C.body, maxWidth: '32ch', margin: 0 }}>
             Want the full certification inventory and technical materials?
           </p>
-          <Link href="/investors" style={{ cursor: 'pointer', display: 'inline-block', background: C.ink, color: C.bg, fontSize: 15, letterSpacing: '.02em', padding: '17px 32px', borderRadius: 1 }}>
+          <Link href="/investors" style={{ cursor: 'pointer', display: 'inline-block', background: C.ink, color: C.bg, fontSize: 16, letterSpacing: '.02em', padding: '16px 32px', borderRadius: 1 }}>
             Request Access&nbsp;→
           </Link>
         </Reveal>

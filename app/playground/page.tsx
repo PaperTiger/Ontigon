@@ -36,7 +36,7 @@ export default function PlaygroundPage() {
       <section
         style={{
           padding:
-            'clamp(130px,20vh,220px) clamp(20px,5vw,64px) clamp(56px,8vh,100px)',
+            'clamp(128px,20vh,192px) clamp(32px,5vw,64px) clamp(48px,8vh,96px)',
           maxWidth: 1320,
           margin: '0 auto',
         }}
@@ -52,7 +52,7 @@ export default function PlaygroundPage() {
         <Reveal
           as="p"
           delay={120}
-          style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: 0 }}
+          style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: 0 }}
         >
           Interactive demos run directly against the substrate. No slides, no
           hand-waving. Open one and watch the geometry behave. New demos are
@@ -60,7 +60,7 @@ export default function PlaygroundPage() {
         </Reveal>
       </section>
 
-      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 clamp(20px,5vw,64px) clamp(80px,12vh,160px)' }}>
+      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 clamp(32px,5vw,64px) clamp(80px,12vh,160px)' }}>
         <div
           style={{
             display: 'grid',
@@ -87,7 +87,7 @@ export default function PlaygroundPage() {
             paddingTop: 40,
           }}
         >
-          <p style={{ fontFamily: sans, fontWeight: 200, fontStyle: 'italic', fontSize: 'clamp(17px,1.8vw,24px)', lineHeight: 1.4, color: C.body, maxWidth: '30ch', margin: 0 }}>
+          <p style={{ fontFamily: sans, fontWeight: 200, fontStyle: 'italic', fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.4, color: C.body, maxWidth: '30ch', margin: 0 }}>
             Some demos require access. We&apos;ll unlock them when we talk.
           </p>
           <Link href="/investors" style={ctaSolid}>

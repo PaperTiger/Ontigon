@@ -167,15 +167,15 @@ export function HopfHero() {
     big: React.ReactNode,
     note: React.ReactNode,
   ) => (
-    <div style={{ background: C.heroBg, padding: '26px 22px' }}>
+    <div style={{ background: C.heroBg, padding: '24px 24px' }}>
       {big}
       <div
         style={{
           fontFamily: mono,
-          fontSize: 11,
+          fontSize: 12,
           letterSpacing: '.05em',
           color: 'rgba(255,255,255,.5)',
-          marginTop: 14,
+          marginTop: 16,
           lineHeight: 1.5,
         }}
       >
@@ -187,7 +187,7 @@ export function HopfHero() {
   const bigStat: React.CSSProperties = {
     fontFamily: sans,
     fontWeight: 200,
-    fontSize: 'clamp(34px,4.4vw,60px)',
+    fontSize: 'clamp(37px,4.4vw,65px)',
     lineHeight: 1,
     letterSpacing: '-.02em',
     color: '#fff',
@@ -260,7 +260,7 @@ export function HopfHero() {
               letterSpacing: '.34em',
               textTransform: 'uppercase',
               color: '#fff',
-              marginBottom: 34,
+              marginBottom: 32,
             }}
           >
             {HERO_TAGLINE}
@@ -269,7 +269,7 @@ export function HopfHero() {
             style={{
               fontFamily: sans,
               fontWeight: 200,
-              fontSize: 'clamp(44px,9.5vw,170px)',
+              fontSize: 'clamp(49px,9.5vw,155px)',
               lineHeight: 1,
               letterSpacing: '-.035em',
               color: '#fff',
@@ -302,11 +302,11 @@ export function HopfHero() {
             style={{
               fontFamily: sans,
               fontWeight: 200,
-              fontSize: 'clamp(30px,5vw,78px)',
+              fontSize: 'clamp(28px,5vw,87px)',
               lineHeight: 1.08,
               letterSpacing: '-.025em',
               color: '#fff',
-              margin: '0 0 42px',
+              margin: '0 0 40px',
               maxWidth: '17ch',
               textShadow: '0 0 50px rgba(0,0,0,.7)',
             }}
@@ -319,10 +319,10 @@ export function HopfHero() {
           <div
             style={{
               display: 'flex',
-              gap: 14,
+              gap: 16,
               flexWrap: 'wrap',
               justifyContent: 'center',
-              marginBottom: 'clamp(46px,8vh,84px)',
+              marginBottom: 'clamp(48px,8vh,80px)',
             }}
           >
             <Link
@@ -331,9 +331,9 @@ export function HopfHero() {
                 cursor: 'pointer',
                 background: '#fff',
                 color: '#0a0a0b',
-                fontSize: 14,
+                fontSize: 16,
                 letterSpacing: '.02em',
-                padding: '15px 30px',
+                padding: '16px 32px',
                 borderRadius: 1,
               }}
             >
@@ -345,9 +345,9 @@ export function HopfHero() {
                 cursor: 'pointer',
                 border: '1px solid rgba(255,255,255,.4)',
                 color: '#fff',
-                fontSize: 14,
+                fontSize: 16,
                 letterSpacing: '.02em',
-                padding: '15px 30px',
+                padding: '16px 32px',
                 borderRadius: 1,
               }}
             >

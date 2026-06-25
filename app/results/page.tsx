@@ -3,24 +3,24 @@ import { Reveal, CountUp, Bar } from '@/components/motion';
 import { C, mono, sans, eyebrow, ctaSolid } from '@/lib/ui';
 
 const sectionPad: React.CSSProperties = {
-  padding: 'clamp(48px,7vh,86px) 0',
+  padding: 'clamp(48px,7vh,80px) 0',
   borderTop: `1px solid ${C.hair}`,
 };
 const h2row: React.CSSProperties = {
   fontFamily: sans,
   fontWeight: 400,
-  fontSize: 'clamp(24px,2.8vw,40px)',
+  fontSize: 'clamp(21px,2.8vw,37px)',
   margin: 0,
   letterSpacing: '-.01em',
 };
 const certLabel: React.CSSProperties = {
   fontFamily: mono,
-  fontSize: 11.5,
+  fontSize: 12,
   letterSpacing: '.08em',
   color: C.mute,
 };
 const lead: React.CSSProperties = {
-  fontSize: 15,
+  fontSize: 16,
   lineHeight: 1.6,
   color: C.mute,
   maxWidth: '60ch',
@@ -33,7 +33,7 @@ const barVal: React.CSSProperties = {
 };
 const barName: React.CSSProperties = {
   fontFamily: mono,
-  fontSize: 13,
+  fontSize: 12,
   letterSpacing: '.04em',
 };
 
@@ -57,7 +57,7 @@ function BarRow({
       style={{
         display: 'grid',
         gridTemplateColumns: cols,
-        gap: 18,
+        gap: 16,
         alignItems: 'center',
       }}
     >
@@ -74,7 +74,7 @@ export default function ResultsPage() {
       <section
         style={{
           padding:
-            'clamp(130px,20vh,220px) clamp(20px,5vw,64px) clamp(60px,9vh,110px)',
+            'clamp(128px,20vh,192px) clamp(32px,5vw,64px) clamp(64px,9vh,96px)',
           maxWidth: 1320,
           margin: '0 auto',
         }}
@@ -90,7 +90,7 @@ export default function ResultsPage() {
         <Reveal
           as="p"
           delay={120}
-          style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: 0 }}
+          style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: 0 }}
         >
           Every claim has a falsifier: an experiment designed to show the result
           is wrong. 484 certification scripts. 300+ certified claims. If
@@ -98,7 +98,7 @@ export default function ResultsPage() {
         </Reveal>
       </section>
 
-      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 clamp(20px,5vw,64px)' }}>
+      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 clamp(32px,5vw,64px)' }}>
         {/* direct benchmarks */}
         <Reveal style={sectionPad}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 12, marginBottom: 14 }}>
@@ -130,7 +130,7 @@ export default function ResultsPage() {
             <BarRow cols="160px 1fr 72px" name="With sleep arch." fill={100} color={C.ink} value="100%" />
             <BarRow cols="160px 1fr 72px" name="Without sleep" fill={15} color={C.decor} value="15%" dim />
           </div>
-          <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.45, color: C.body, maxWidth: '42ch', margin: 0 }}>
+          <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.45, color: C.body, maxWidth: '42ch', margin: 0 }}>
             The 85-point gap is not incidental. Sleep is causally load-bearing.
           </p>
         </Reveal>
@@ -141,7 +141,7 @@ export default function ResultsPage() {
             ...sectionPad,
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
-            gap: 'clamp(24px,4vw,72px)',
+            gap: 'clamp(24px,4vw,64px)',
             alignItems: 'center',
           }}
           data-r=""
@@ -150,7 +150,7 @@ export default function ResultsPage() {
             <div style={{ display: 'flex', alignItems: 'baseline', gap: 16, marginBottom: 14 }}>
               <h2 style={h2row}>Emergence</h2>
             </div>
-            <p style={{ fontSize: 15, lineHeight: 1.7, color: C.body, maxWidth: '48ch', margin: '0 0 18px' }}>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: C.body, maxWidth: '48ch', margin: '0 0 16px' }}>
               Association from physics alone. The system formed associations
               under task pressure with{' '}
               <span style={{ fontStyle: 'italic', fontFamily: sans }}>no weight updates.</span>{' '}
@@ -158,12 +158,12 @@ export default function ResultsPage() {
             </p>
             <span style={certLabel}>CERT: RING_03_ASSOC</span>
           </div>
-          <div style={{ borderLeft: `1px solid ${C.hairStrong}`, paddingLeft: 'clamp(20px,3vw,44px)' }}>
+          <div style={{ borderLeft: `1px solid ${C.hairStrong}`, paddingLeft: 'clamp(24px,3vw,48px)' }}>
             <CountUp
               to={73.6}
               decimals={1}
               suffix="%"
-              style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(54px,8vw,110px)', lineHeight: 0.92, letterSpacing: '-.02em' }}
+              style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(48px,8vw,96px)', lineHeight: 0.92, letterSpacing: '-.02em' }}
             />
             <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.06em', color: C.mute, marginTop: 16, lineHeight: 1.6 }}>
               ± 6.8% · p &lt; 0.0001
@@ -185,19 +185,19 @@ export default function ResultsPage() {
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: C.hair, border: `1px solid ${C.hair}`, maxWidth: 760 }} data-r="">
             <div style={{ background: '#f1f1f2', padding: 32 }}>
-              <div style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(40px,5vw,68px)', lineHeight: 1 }}>16/16</div>
-              <div style={{ fontFamily: mono, fontSize: 11.5, letterSpacing: '.06em', color: C.mute, marginTop: 12 }}>
+              <div style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(37px,5vw,65px)', lineHeight: 1 }}>16/16</div>
+              <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.06em', color: C.mute, marginTop: 12 }}>
                 universal gate set · pass
               </div>
             </div>
             <div style={{ background: '#f1f1f2', padding: 32 }}>
-              <div style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(40px,5vw,68px)', lineHeight: 1 }}>2√2</div>
-              <div style={{ fontFamily: mono, fontSize: 11.5, letterSpacing: '.06em', color: C.mute, marginTop: 12 }}>
+              <div style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(37px,5vw,65px)', lineHeight: 1 }}>2√2</div>
+              <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.06em', color: C.mute, marginTop: 12 }}>
                 Bell CHSH violation, S<br />error 2.87×10⁻⁷
               </div>
             </div>
           </div>
-          <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.45, color: C.body, maxWidth: '38ch', margin: '32px 0 0' }}>
+          <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.45, color: C.body, maxWidth: '38ch', margin: '32px 0 0' }}>
             This was not the goal. It is what the geometry produced.
           </p>
         </Reveal>
@@ -214,12 +214,12 @@ export default function ResultsPage() {
               ['0–7', 'rings certified in 15 days, zero tuning'],
             ].map(([big, label]) => (
               <div key={label} style={{ background: '#f1f1f2', padding: 26 }}>
-                <div style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(32px,3.4vw,48px)', lineHeight: 1 }}>{big}</div>
-                <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: '.05em', color: C.mute, marginTop: 10 }}>{label}</div>
+                <div style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(37px,3.4vw,49px)', lineHeight: 1 }}>{big}</div>
+                <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.05em', color: C.mute, marginTop: 8 }}>{label}</div>
               </div>
             ))}
           </div>
-          <Link href="/investors" style={{ ...ctaSolid, marginTop: 56 }}>
+          <Link href="/investors" style={{ ...ctaSolid, marginTop: 48 }}>
             Request full certification inventory&nbsp;→
           </Link>
         </Reveal>

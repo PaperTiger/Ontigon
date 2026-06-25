@@ -4,13 +4,13 @@ import { C, sans, eyebrow, rowHead, ctaSolid } from '@/lib/ui';
 
 const twoCol: React.CSSProperties = {
   display: 'grid',
-  gridTemplateColumns: '.42fr 1fr',
-  gap: 'clamp(24px,4vw,72px)',
-  padding: 'clamp(48px,7vh,90px) 0',
+  gridTemplateColumns: '5fr 7fr',
+  gap: 'clamp(24px,4vw,64px)',
+  padding: 'clamp(48px,7vh,96px) 0',
   borderTop: `1px solid ${C.hair}`,
 };
 const colBody: React.CSSProperties = {
-  fontSize: 'clamp(14px,1.1vw,16px)',
+  fontSize: 'clamp(12px,1.1vw,16px)',
   lineHeight: 1.7,
   color: C.body,
   maxWidth: '58ch',
@@ -30,7 +30,7 @@ export default function AboutPage() {
       <section
         style={{
           padding:
-            'clamp(130px,20vh,220px) clamp(20px,5vw,64px) clamp(60px,9vh,110px)',
+            'clamp(128px,20vh,192px) clamp(32px,5vw,64px) clamp(64px,9vh,96px)',
           maxWidth: 1320,
           margin: '0 auto',
         }}
@@ -45,7 +45,7 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
-      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 clamp(20px,5vw,64px)' }}>
+      <div style={{ maxWidth: 1320, margin: '0 auto', padding: '0 clamp(32px,5vw,64px)' }}>
         <Reveal data-r="" style={twoCol}>
           <h2 style={rowHead}>How this started</h2>
           <p style={colBody}>
@@ -63,7 +63,7 @@ export default function AboutPage() {
         <Reveal data-r="" style={twoCol}>
           <h2 style={rowHead}>Where we are</h2>
           <div>
-            <p style={{ ...colBody, margin: '0 0 18px' }}>
+            <p style={{ ...colBody, margin: '0 0 16px' }}>
               Seed stage. Delaware C-corp. Working code on commodity GPU
               hardware. 17 provisional patents filed through Fish &amp;
               Richardson. The certification program is the methodology, not just
@@ -87,13 +87,13 @@ export default function AboutPage() {
                 style={{
                   display: 'grid',
                   gridTemplateColumns: '1fr 1fr',
-                  gap: 18,
-                  padding: '20px 0',
+                  gap: 16,
+                  padding: '24px 0',
                   borderBottom: `1px solid ${C.hair}`,
                 }}
               >
-                <span style={{ fontFamily: sans, fontSize: 'clamp(18px,1.8vw,24px)' }}>{name}</span>
-                <span style={{ fontSize: 14, color: C.mute, alignSelf: 'center' }}>{role}</span>
+                <span style={{ fontFamily: sans, fontSize: 'clamp(16px,1.8vw,24px)' }}>{name}</span>
+                <span style={{ fontSize: 16, color: C.mute, alignSelf: 'center' }}>{role}</span>
               </div>
             ))}
           </div>
@@ -101,7 +101,7 @@ export default function AboutPage() {
 
         <Reveal
           data-r=""
-          style={{ ...twoCol, padding: 'clamp(48px,7vh,90px) 0 clamp(80px,12vh,160px)' }}
+          style={{ ...twoCol, padding: 'clamp(48px,7vh,96px) 0 clamp(80px,12vh,160px)' }}
         >
           <h2 style={rowHead}>Contact</h2>
           <div>

@@ -38,25 +38,25 @@ export function Footer() {
         style={{
           maxWidth: 1320,
           margin: '0 auto',
-          padding: 'clamp(64px,10vh,120px) clamp(20px,5vw,64px) 0',
+          padding: 'clamp(64px,10vh,128px) clamp(32px,5vw,64px) 0',
           display: 'grid',
           gridTemplateColumns: '1fr auto',
-          gap: 'clamp(32px,5vw,80px)',
+          gap: 'clamp(32px,5vw,64px)',
           alignItems: 'start',
         }}
       >
         <div>
           <Link
             href="/"
-            style={{ cursor: 'pointer', display: 'inline-block', marginBottom: 14, color: '#f1f1f2' }}
+            style={{ cursor: 'pointer', display: 'inline-block', marginBottom: 16, color: '#f1f1f2' }}
           >
-            <Logo style={{ height: 'clamp(28px,4vw,52px)' }} />
+            <Logo style={{ height: 'clamp(32px,4vw,48px)' }} />
           </Link>
           <p
             style={{
               fontFamily: "'Inter', sans-serif",
               fontWeight: 300,
-              fontSize: 13,
+              fontSize: 12,
               lineHeight: 1.5,
               color: 'rgba(255,255,255,.55)',
               margin: 0,
@@ -73,9 +73,9 @@ export function Footer() {
             whiteSpace: 'nowrap',
             border: '1px solid rgba(255,255,255,.3)',
             color: '#fff',
-            fontSize: 14,
+            fontSize: 16,
             letterSpacing: '.02em',
-            padding: '15px 28px',
+            padding: '16px 24px',
             borderRadius: 1,
             display: 'inline-block',
           }}
@@ -93,7 +93,7 @@ export function Footer() {
           display: 'grid',
           gridTemplateColumns: 'repeat(3,1fr)',
           gap: 'clamp(24px,4vw,64px)',
-          padding: 'clamp(40px,6vh,64px) clamp(20px,5vw,64px)',
+          padding: 'clamp(40px,6vh,64px) clamp(32px,5vw,64px)',
           borderBottom: '1px solid rgba(255,255,255,.1)',
         }}
       >
@@ -102,11 +102,11 @@ export function Footer() {
             <div
               style={{
                 fontFamily: mono,
-                fontSize: 10.5,
+                fontSize: 12,
                 letterSpacing: '.18em',
                 color: 'rgba(255,255,255,.32)',
                 textTransform: 'uppercase',
-                marginBottom: 18,
+                marginBottom: 16,
               }}
             >
               {col.title}
@@ -117,7 +117,7 @@ export function Footer() {
                   <a
                     key={l.href}
                     href={l.href}
-                    style={{ fontSize: 14, color: 'rgba(255,255,255,.72)' }}
+                    style={{ fontSize: 16, color: 'rgba(255,255,255,.72)' }}
                   >
                     {l.label}
                   </a>
@@ -125,7 +125,7 @@ export function Footer() {
                   <Link
                     key={l.href}
                     href={l.href}
-                    style={{ cursor: 'pointer', fontSize: 14, color: 'rgba(255,255,255,.72)' }}
+                    style={{ cursor: 'pointer', fontSize: 16, color: 'rgba(255,255,255,.72)' }}
                   >
                     {l.label}
                   </Link>
@@ -141,18 +141,18 @@ export function Footer() {
         style={{
           maxWidth: 1320,
           margin: '0 auto',
-          padding: '20px clamp(20px,5vw,64px)',
+          padding: '24px clamp(32px,5vw,64px)',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
           flexWrap: 'wrap',
-          gap: 12,
+          gap: 16,
         }}
       >
         <span
           style={{
             fontFamily: mono,
-            fontSize: 11,
+            fontSize: 12,
             letterSpacing: '.06em',
             color: 'rgba(255,255,255,.22)',
           }}
@@ -162,7 +162,7 @@ export function Footer() {
         <span
           style={{
             fontFamily: mono,
-            fontSize: 11,
+            fontSize: 12,
             letterSpacing: '.06em',
             color: 'rgba(255,255,255,.22)',
           }}

@@ -2,14 +2,14 @@ import Link from 'next/link';
 import { C, mono, sans, ctaSolid } from '@/lib/ui';
 
 const para: React.CSSProperties = {
-  fontSize: 'clamp(14px,1.1vw,16px)',
+  fontSize: 'clamp(12px,1.1vw,16px)',
   lineHeight: 1.75,
   color: C.body,
 };
 const h2: React.CSSProperties = {
   fontFamily: sans,
   fontWeight: 200,
-  fontSize: 'clamp(24px,2.8vw,40px)',
+  fontSize: 'clamp(21px,2.8vw,37px)',
   lineHeight: 1.1,
   letterSpacing: '-.02em',
   margin: 0,
@@ -25,23 +25,23 @@ const CERTS = [
 export default function ArticlePage() {
   return (
     <div>
-      <section style={{ padding: 'clamp(130px,20vh,220px) clamp(20px,5vw,64px) clamp(56px,8vh,80px)', maxWidth: 860, margin: '0 auto' }}>
-        <Link href="/news" style={{ cursor: 'pointer', fontFamily: mono, fontSize: 11.5, letterSpacing: '.14em', color: C.mute, textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 40 }}>
+      <section style={{ padding: 'clamp(128px,20vh,192px) clamp(32px,5vw,64px) clamp(48px,8vh,80px)', maxWidth: 860, margin: '0 auto' }}>
+        <Link href="/news" style={{ cursor: 'pointer', fontFamily: mono, fontSize: 12, letterSpacing: '.14em', color: C.mute, textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 40 }}>
           ← News &amp; Updates
         </Link>
         <div style={{ display: 'flex', gap: 14, alignItems: 'center', marginBottom: 28, flexWrap: 'wrap' }}>
-          <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: '.14em', color: '#f1f1f2', background: C.ink, padding: '4px 10px' }}>RESEARCH</span>
-          <time style={{ fontFamily: mono, fontSize: 11, letterSpacing: '.08em', color: C.mute }}>June 2026</time>
+          <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.14em', color: '#f1f1f2', background: C.ink, padding: '4px 10px' }}>RESEARCH</span>
+          <time style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.08em', color: C.mute }}>June 2026</time>
         </div>
         <h1 style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(34px,5vw,72px)', lineHeight: 1.04, letterSpacing: '-.025em', margin: '0 0 32px' }}>
           484 certification scripts. 300+ certified claims. What the program is
           and why it exists.
         </h1>
-        <p style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, margin: 0 }}>By the Ontigon team.</p>
+        <p style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, margin: 0 }}>By the Ontigon team.</p>
       </section>
 
-      <div style={{ maxWidth: 860, margin: '0 auto', padding: '0 clamp(20px,5vw,64px) clamp(80px,12vh,160px)' }}>
-        <div style={{ borderTop: `1px solid ${C.hair}`, paddingTop: 'clamp(48px,7vh,80px)', display: 'flex', flexDirection: 'column', gap: 'clamp(28px,4vh,44px)' }}>
+      <div style={{ maxWidth: 860, margin: '0 auto', padding: '0 clamp(32px,5vw,64px) clamp(80px,12vh,160px)' }}>
+        <div style={{ borderTop: `1px solid ${C.hair}`, paddingTop: 'clamp(48px,7vh,80px)', display: 'flex', flexDirection: 'column', gap: 'clamp(28px,4vh,40px)' }}>
           <p style={{ ...para, color: C.ink, fontWeight: 300 }}>
             The Ontigon certification program is not a marketing layer. It is the
             methodology. Every claim we make about the substrate has a
@@ -86,8 +86,8 @@ export default function ArticlePage() {
             correspond to specific script groups.
           </p>
 
-          <div style={{ background: '#f1f1f2', border: '1px solid rgba(26,26,28,.1)', padding: 'clamp(28px,3.5vw,44px)' }}>
-            <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: '.14em', color: C.mute, marginBottom: 16 }}>SELECTED CERTIFIED RESULTS</div>
+          <div style={{ background: '#f1f1f2', border: '1px solid rgba(26,26,28,.1)', padding: 'clamp(32px,3.5vw,40px)' }}>
+            <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.14em', color: C.mute, marginBottom: 16 }}>SELECTED CERTIFIED RESULTS</div>
             <div style={{ display: 'flex', flexDirection: 'column', borderTop: '1px solid rgba(26,26,28,.1)' }}>
               {CERTS.map(([id, desc], i) => (
                 <div
@@ -101,7 +101,7 @@ export default function ArticlePage() {
                   }}
                 >
                   <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.04em', color: C.mute, whiteSpace: 'nowrap' }}>{id}</span>
-                  <span style={{ fontSize: 15, lineHeight: 1.5, color: C.ink }}>{desc}</span>
+                  <span style={{ fontSize: 16, lineHeight: 1.5, color: C.ink }}>{desc}</span>
                 </div>
               ))}
             </div>
@@ -116,14 +116,14 @@ export default function ArticlePage() {
             grows.
           </p>
 
-          <p style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(18px,1.8vw,24px)', lineHeight: 1.4, letterSpacing: '-.01em', color: C.ink, borderLeft: `2px solid ${C.ink}`, paddingLeft: 22 }}>
+          <p style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.4, letterSpacing: '-.01em', color: C.ink, borderLeft: `2px solid ${C.ink}`, paddingLeft: 24 }}>
             Investors who request access receive the full certification
             inventory: all 484 scripts, pass/fail status, and the underlying
             claim text.
           </p>
 
-          <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', paddingTop: 16 }}>
-            <Link href="/results" style={{ cursor: 'pointer', border: '1px solid rgba(26,26,28,.35)', color: C.ink, fontSize: 14, letterSpacing: '.02em', padding: '14px 26px', borderRadius: 1 }}>
+          <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', paddingTop: 16 }}>
+            <Link href="/results" style={{ cursor: 'pointer', border: '1px solid rgba(26,26,28,.35)', color: C.ink, fontSize: 16, letterSpacing: '.02em', padding: '16px 24px', borderRadius: 1 }}>
               See all results&nbsp;→
             </Link>
             <Link href="/investors" style={{ ...ctaSolid, fontSize: 14, padding: '14px 26px' }}>

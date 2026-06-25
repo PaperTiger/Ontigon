@@ -31,6 +31,17 @@ export const C = {
 export const sans = "'Inter', sans-serif";
 export const mono = "'IBM Plex Mono', monospace";
 
+/* ---------------------------------------------------------------------------
+ * Vignelli mathematical grid system
+ * ------------------------------------------------------------------------- */
+export const grid = { cols: 12, gap: '24px', maxw: 1320 } as const;
+
+/** Type scale: perfect fourth (×1.333) from 12px */
+export const typeScale = [12, 16, 21, 28, 37, 49, 65, 87, 116, 155] as const;
+
+/** Spacing scale: multiples of 8px */
+export const spacingScale = [8, 16, 24, 32, 40, 48, 64, 80, 96, 128, 160, 192] as const;
+
 /* Common reusable style fragments ----------------------------------------- */
 
 /** Mono eyebrow / section label. */
@@ -40,7 +51,7 @@ export const eyebrow: CSSProperties = {
   letterSpacing: '.26em',
   color: C.mute,
   textTransform: 'uppercase',
-  marginBottom: 32,
+  marginBottom: 24,
 };
 
 /** Large thin display heading (Inter 200). */
@@ -57,7 +68,7 @@ export const display = (size: string): CSSProperties => ({
 export const display2: CSSProperties = {
   fontFamily: sans,
   fontWeight: 200,
-  fontSize: 'clamp(24px,2.6vw,40px)',
+  fontSize: 'clamp(28px,2.6vw,49px)',
   lineHeight: 1.08,
   letterSpacing: '-.02em',
   margin: 0,
@@ -65,7 +76,7 @@ export const display2: CSSProperties = {
 
 /** Standard body paragraph on light backgrounds. */
 export const body: CSSProperties = {
-  fontSize: 'clamp(14px,1.1vw,16px)',
+  fontSize: 'clamp(12px,1.1vw,16px)',
   lineHeight: 1.7,
   color: C.body,
 };
@@ -74,7 +85,7 @@ export const body: CSSProperties = {
 export const rowHead: CSSProperties = {
   fontFamily: sans,
   fontWeight: 400,
-  fontSize: 'clamp(24px,2.6vw,38px)',
+  fontSize: 'clamp(21px,2.6vw,37px)',
   lineHeight: 1.08,
   margin: 0,
   letterSpacing: '-.01em',
@@ -86,9 +97,9 @@ export const ctaSolid: CSSProperties = {
   display: 'inline-block',
   background: C.ink,
   color: C.bg,
-  fontSize: 15,
+  fontSize: 16,
   letterSpacing: '.02em',
-  padding: '17px 32px',
+  padding: '16px 32px',
   borderRadius: 1,
 };
 
@@ -97,12 +108,12 @@ export const ctaGhost: CSSProperties = {
   cursor: 'pointer',
   display: 'inline-block',
   border: `1px solid ${C.ink}`,
-  fontSize: 15,
+  fontSize: 16,
   letterSpacing: '.02em',
-  padding: '17px 32px',
+  padding: '16px 32px',
   borderRadius: 1,
 };
 
 /** Standard outer content gutter used across sections. */
-export const gutter = 'clamp(20px,5vw,64px)';
+export const gutter = 'clamp(32px,5vw,64px)';
 export const maxw = 1320;

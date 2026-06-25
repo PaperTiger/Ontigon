@@ -8,7 +8,7 @@ export default function InvestorsPage() {
       <section
         style={{
           padding:
-            'clamp(130px,20vh,200px) clamp(20px,5vw,64px) clamp(80px,12vh,160px)',
+            'clamp(128px,20vh,192px) clamp(32px,5vw,64px) clamp(80px,12vh,160px)',
           maxWidth: 1320,
           margin: '0 auto',
         }}
@@ -18,7 +18,7 @@ export default function InvestorsPage() {
           style={{
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
-            gap: 'clamp(40px,7vw,120px)',
+            gap: 'clamp(40px,7vw,128px)',
           }}
         >
           <div>
@@ -33,7 +33,7 @@ export default function InvestorsPage() {
             <Reveal
               as="p"
               delay={120}
-              style={{ fontSize: 'clamp(14px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '44ch', margin: '0 0 24px' }}
+              style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '44ch', margin: '0 0 24px' }}
             >
               We don&apos;t publish a pitch deck. The full story, including the
               architecture thesis, certification inventory, comp stack, and raise
@@ -42,7 +42,7 @@ export default function InvestorsPage() {
             <Reveal
               as="p"
               delay={160}
-              style={{ fontFamily: sans, fontSize: 'clamp(18px,1.8vw,24px)', lineHeight: 1.4, color: C.body, maxWidth: '30ch', margin: 0 }}
+              style={{ fontFamily: sans, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.4, color: C.body, maxWidth: '30ch', margin: 0 }}
             >
               Tell us who you are and we&apos;ll be in touch.
             </Reveal>
