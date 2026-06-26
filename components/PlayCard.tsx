@@ -39,7 +39,7 @@ export function PlayCard({
               fontFamily: mono,
               fontSize: 11,
               letterSpacing: '.1em',
-              color: hover ? '#fff' : C.accent,
+              color: hover ? C.accent : C.ink,
               transition: 'color .35s ease',
             }}
           >
@@ -59,7 +59,7 @@ export function PlayCard({
         <div
           style={{
             aspectRatio: '16/9',
-            border: `1px solid ${hover ? 'rgba(255,255,255,.2)' : 'rgba(26,25,22,.14)'}`,
+            border: `1px solid ${hover ? 'rgba(255,255,255,.2)' : C.ink}`,
             margin: '28px 0',
             background:
               'repeating-linear-gradient(45deg,rgba(26,25,22,.05) 0 1px,transparent 1px 9px)',

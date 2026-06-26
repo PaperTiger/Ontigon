@@ -86,7 +86,7 @@ export default function ArticlePage() {
             correspond to specific script groups.
           </p>
 
-          <div style={{ background: '#f1f1f2', border: '1px solid rgba(26,26,28,.1)', padding: 'clamp(32px,3.5vw,40px)' }}>
+          <div style={{ background: '#f1f1f2', border: `1px solid ${C.ink}`, padding: 'clamp(32px,3.5vw,40px)' }}>
             <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.14em', color: C.mute, marginBottom: 16 }}>SELECTED CERTIFIED RESULTS</div>
             <div style={{ display: 'flex', flexDirection: 'column', borderTop: '1px solid rgba(26,26,28,.1)' }}>
               {CERTS.map(([id, desc], i) => (
@@ -94,7 +94,7 @@ export default function ArticlePage() {
                   key={id}
                   style={{
                     display: 'grid',
-                    gridTemplateColumns: 'auto 1fr',
+                    gridTemplateColumns: '1fr 1fr',
                     gap: 24,
                     padding: '16px 0',
                     borderBottom: i < CERTS.length - 1 ? '1px solid rgba(26,26,28,.1)' : undefined,
