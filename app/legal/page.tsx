@@ -12,12 +12,12 @@ const sectionHead: React.CSSProperties = {
   fontFamily: sans,
   fontWeight: 300,
   fontSize: 'clamp(21px,2.4vw,37px)',
-  lineHeight: 1.1,
+  lineHeight: 1.08,
   margin: 0,
   letterSpacing: '-.01em',
 };
 const para: React.CSSProperties = {
-  fontSize: 'clamp(12px,1.1vw,16px)',
+  fontSize: '16px',
   lineHeight: 1.75,
   color: C.body,
   maxWidth: '60ch',
@@ -32,7 +32,7 @@ export default function LegalPage() {
         <Reveal as="h1" delay={60} style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(48px,9vw,140px)', lineHeight: 0.96, letterSpacing: '-.025em', margin: '0 0 40px' }}>
           Terms &amp; privacy.
         </Reveal>
-        <Reveal as="p" delay={120} style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '56ch', margin: '0 0 16px' }}>
+        <Reveal as="p" delay={120} style={{ fontSize: '16px', lineHeight: 1.7, color: C.body, maxWidth: '56ch', margin: '0 0 16px' }}>
           This page is a template. Replace the bracketed copy with language
           reviewed by counsel before publishing.
         </Reveal>

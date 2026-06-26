@@ -82,7 +82,7 @@ export default function NewsPage() {
         <Reveal
           as="p"
           delay={120}
-          style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '52ch', margin: 0 }}
+          style={{ fontSize: '16px', lineHeight: 1.7, color: C.body, maxWidth: '52ch', margin: 0 }}
         >
           We publish when there&apos;s something real to say. <br />
           No noise. Below is the record.
@@ -112,13 +112,13 @@ export default function NewsPage() {
               484 certification scripts. 300+ certified claims. What the program
               is and why it exists.
             </h2>
-            <p style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '52ch', margin: '0 0 28px' }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: C.body, maxWidth: '52ch', margin: '0 0 28px' }}>
               The certification methodology isn&apos;t just a list of results.
               It&apos;s a falsification program. Every claim has a script
               designed to prove it wrong. Here&apos;s how it works and what
               it&apos;s produced.
             </p>
-            <Link href="/news/certification-program" style={{ cursor: 'pointer', fontSize: 16, letterSpacing: '.04em', borderBottom: `1px solid ${C.ink}`, paddingBottom: 2 }}>
+            <Link href="/news/certification-program" style={{ cursor: 'pointer', fontSize: 16, letterSpacing: '.04em', borderBottom: `1px solid ${C.hair}`, paddingBottom: 2 }}>
               Read the results&nbsp;→
             </Link>
           </div>
@@ -133,10 +133,10 @@ export default function NewsPage() {
             display: 'grid',
             gridTemplateColumns: 'repeat(2,1fr)',
             gap: 1,
-            background: 'rgba(26,25,22,.1)',
-            borderLeft: '1px solid rgba(26,25,22,.1)',
-            borderRight: '1px solid rgba(26,25,22,.1)',
-            borderBottom: '1px solid rgba(26,25,22,.1)',
+            background: C.ink,
+            borderLeft: `1px solid ${C.ink}`,
+            borderRight: `1px solid ${C.ink}`,
+            borderBottom: `1px solid ${C.ink}`,
           }}
         >
           {FEED.map((a) => (
@@ -158,7 +158,7 @@ export default function NewsPage() {
                 <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.1em', color: C.accent }}>{a.cat}</span>
                 <time style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.06em', color: C.decor }}>{a.date}</time>
               </div>
-              <h3 style={{ fontFamily: sans, fontWeight: 300, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.15, letterSpacing: '-.01em', margin: '0 0 clamp(20px,3vh,32px)' }}>
+              <h3 style={{ fontFamily: sans, fontWeight: 300, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.08, letterSpacing: '-.01em', margin: '0 0 clamp(20px,3vh,32px)' }}>
                 {a.title}
               </h3>
               <p style={{ fontSize: 16, lineHeight: 1.65, color: C.mute2, margin: '0 0 20px', flex: 1 }}>{a.body}</p>

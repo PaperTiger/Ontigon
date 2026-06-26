@@ -33,7 +33,7 @@ export default function InvestorsPage() {
             <Reveal
               as="p"
               delay={120}
-              style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '44ch', margin: '0 0 24px' }}
+              style={{ fontSize: '16px', lineHeight: 1.7, color: C.body, maxWidth: '44ch', margin: '0 0 24px' }}
             >
               We don&apos;t publish a pitch deck. The full story, including the
               architecture thesis, certification inventory, comp stack, and raise

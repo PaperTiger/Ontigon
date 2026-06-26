@@ -25,10 +25,10 @@ function Dot({ style }: { style: React.CSSProperties }) {
       style={{
         position: 'absolute',
         left: 14,
+        top: 'clamp(40px,6vh,64px)',
         width: 17,
         height: 17,
         borderRadius: '50%',
-        marginTop: 6,
         ...style,
       }}
     />
@@ -43,7 +43,7 @@ export default function RoadmapPage() {
         <Reveal as="h1" delay={60} style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(48px,10vw,150px)', lineHeight: 0.96, letterSpacing: '-.025em', margin: '0 0 40px' }}>
           Where we&apos;re going.
         </Reveal>
-        <Reveal as="p" delay={120} style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '56ch', margin: 0 }}>
+        <Reveal as="p" delay={120} style={{ fontSize: '16px', lineHeight: 1.7, color: C.body, maxWidth: '56ch', margin: 0 }}>
           This is a working research program, not a product roadmap. These are
           the open questions and the sequence in which the geometry forces us to
           answer them.
@@ -59,7 +59,7 @@ export default function RoadmapPage() {
             <Dot style={{ background: C.ink }} />
             <div style={stageLabel(C.decor)}>Complete</div>
             <h2 style={stageHead}>Geometric derivation &amp; core certification</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: 1, background: 'rgba(26,25,22,.1)', border: '1px solid rgba(26,25,22,.1)', maxWidth: 820 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: 1, background: C.ink, border: `1px solid ${C.ink}`, maxWidth: 820 }}>
               {[
                 ['CERT', 'Three-sphere substrate derived from shape dynamics'],
                 ['CERT', 'Universal quantum gate set from topology'],
@@ -80,14 +80,14 @@ export default function RoadmapPage() {
             <Dot style={{ background: '#f1f1f2', border: `2px solid ${C.ink}` }} />
             <div style={stageLabel(C.mute)}>Active research frontier</div>
             <h2 style={{ ...stageHead, margin: '0 0 16px' }}>Physical interpretation of the geometry</h2>
-            <p style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: '0 0 28px' }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: '0 0 28px' }}>
               The geometric derivation is proven. The link between the
               substrate&apos;s topology and its full physical interpretation,
               specifically, the mass-energy correspondence and the binding
               dynamics at scale: that is the open question. We say this because it
               is true.
             </p>
-            <p style={{ fontFamily: sans, fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.5, color: C.mute2, maxWidth: '44ch', margin: 0 }}>
+            <p style={{ fontFamily: sans, fontSize: '16px', lineHeight: 1.5, color: C.mute2, maxWidth: '44ch', margin: 0 }}>
               The geometry is right. We are proving the last link in the chain.
             </p>
           </Reveal>
@@ -118,7 +118,7 @@ export default function RoadmapPage() {
             <h2 style={{ ...stageHead, margin: '0 0 16px', color: '#787880' }}>
               A substrate that doesn&apos;t need scale.
             </h2>
-            <p style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.mute, maxWidth: '56ch', margin: '0 0 40px' }}>
+            <p style={{ fontSize: '16px', lineHeight: 1.7, color: C.mute, maxWidth: '56ch', margin: '0 0 40px' }}>
               When the geometry and physics are fully unified, the compute cost
               becomes a function of the topology, not the parameter count. That is
               the end state. We are not there yet. We know the shape of the path.

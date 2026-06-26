@@ -12,7 +12,7 @@ const twoCol: React.CSSProperties = {
 };
 
 const colBody: React.CSSProperties = {
-  fontSize: 'clamp(12px,1.1vw,16px)',
+  fontSize: '16px',
   lineHeight: 1.7,
   color: C.body,
   maxWidth: '58ch',
@@ -30,6 +30,7 @@ const emergeHead: React.CSSProperties = {
   fontFamily: sans,
   fontWeight: 400,
   fontSize: 'clamp(21px,2.2vw,28px)',
+  lineHeight: 1.08,
   margin: '0 0 16px',
 };
 const emergeBody: React.CSSProperties = {
@@ -64,7 +65,7 @@ export default function SciencePage() {
           style={{
             fontFamily: sans,
             fontWeight: 200,
-            fontSize: 'clamp(12px,1.1vw,16px)',
+            fontSize: '16px',
             lineHeight: 1.7,
             color: C.body,
             maxWidth: '52ch',
@@ -151,7 +152,7 @@ export default function SciencePage() {
                   }}
                 >
                   <div style={{ fontFamily: sans, fontWeight: 400, fontSize: 'clamp(18px,1.8vw,24px)', lineHeight: 1.2 }}>{t}</div>
-                  <div style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body }}>
+                  <div style={{ fontSize: '16px', lineHeight: 1.7, color: C.body }}>
                     {d}
                   </div>
                 </div>
@@ -219,8 +220,8 @@ export default function SciencePage() {
               display: 'grid',
               gridTemplateColumns: 'repeat(3,1fr)',
               gap: 1,
-              background: 'rgba(241,241,242,.16)',
-              border: '1px solid rgba(241,241,242,.16)',
+              background: 'rgba(255,255,255,.2)',
+              border: '1px solid rgba(255,255,255,.2)',
             }}
           >
             {[
@@ -285,7 +286,7 @@ export default function SciencePage() {
               fontFamily: sans,
               fontWeight: 200,
               fontSize: 'clamp(21px,3vw,49px)',
-              lineHeight: 1.3,
+              lineHeight: 1.08,
               letterSpacing: '-.01em',
               maxWidth: '24ch',
               margin: '0 0 48px',
@@ -298,7 +299,7 @@ export default function SciencePage() {
             as="p"
             delay={120}
             style={{
-              fontSize: 'clamp(12px,1.1vw,16px)',
+              fontSize: '16px',
               lineHeight: 1.7,
               color: C.mute2,
               maxWidth: '52ch',

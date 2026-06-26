@@ -28,7 +28,7 @@ const cardHead: React.CSSProperties = {
   fontFamily: sans,
   fontWeight: 400,
   fontSize: 'clamp(21px,2.2vw,28px)',
-  lineHeight: 1.1,
+  lineHeight: 1.08,
   margin: '0 0 16px',
   color: '#fff',
 };
@@ -89,7 +89,7 @@ export default function HomePage() {
             as="p"
             delay={120}
             style={{
-              fontSize: 'clamp(14px,1.1vw,16px)',
+              fontSize: 16,
               lineHeight: 1.7,
               color: 'rgba(255,255,255,.62)',
               maxWidth: '62ch',
@@ -146,8 +146,8 @@ export default function HomePage() {
               display: 'grid',
               gridTemplateColumns: 'repeat(3,1fr)',
               gap: 1,
-              background: 'rgba(255,255,255,.1)',
-              border: '1px solid rgba(255,255,255,.1)',
+              background: 'rgba(255,255,255,.7)',
+              border: '1px solid rgba(255,255,255,.7)',
             }}
             data-r=""
           >
@@ -187,7 +187,7 @@ export default function HomePage() {
             style={{
               marginTop: 'clamp(40px,6vh,64px)',
               paddingTop: 'clamp(32px,4vh,48px)',
-              borderTop: '1px solid rgba(255,255,255,.1)',
+              borderTop: '1px solid rgba(255,255,255,.7)',
             }}
           >
             <p
@@ -195,7 +195,7 @@ export default function HomePage() {
                 fontFamily: sans,
                 fontWeight: 200,
                 fontSize: 'clamp(21px,2.8vw,49px)',
-                lineHeight: 1.1,
+                lineHeight: 1.08,
                 letterSpacing: '-.015em',
                 color: '#ffffff',
                 margin: 0,
@@ -255,7 +255,7 @@ export default function HomePage() {
               as="p"
               delay={120}
               style={{
-                fontSize: 'clamp(14px,1.1vw,16px)',
+                fontSize: 16,
                 lineHeight: 1.75,
                 color: '#cbcbcf',
                 maxWidth: '46ch',
@@ -282,7 +282,7 @@ export default function HomePage() {
                 href="/science"
                 style={{
                   cursor: 'pointer',
-                  border: '1px solid rgba(255,255,255,.3)',
+                  border: '1px solid #ffffff',
                   color: '#fff',
                   fontSize: 13.5,
                   letterSpacing: '.04em',
@@ -296,7 +296,7 @@ export default function HomePage() {
                 href="/results"
                 style={{
                   cursor: 'pointer',
-                  border: '1px solid rgba(255,255,255,.3)',
+                  border: '1px solid #ffffff',
                   color: '#fff',
                   fontSize: 13.5,
                   letterSpacing: '.04em',

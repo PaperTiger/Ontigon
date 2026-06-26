@@ -77,7 +77,7 @@ export const display2: CSSProperties = {
 
 /** Standard body paragraph on light backgrounds. */
 export const body: CSSProperties = {
-  fontSize: 'clamp(12px,1.1vw,16px)',
+  fontSize: 16,
   lineHeight: 1.7,
   color: C.body,
 };

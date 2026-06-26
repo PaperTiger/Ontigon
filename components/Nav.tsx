@@ -73,9 +73,9 @@ export function Nav() {
 
   const linkColor = dark ? 'rgba(255,255,255,.82)' : C.ink;
 
-  const navLinkStyle = (active: boolean): React.CSSProperties => ({
-    fontSize: 15,
-    letterSpacing: 0,
+  const navLinkStyle = (active: boolean, tight?: boolean): React.CSSProperties => ({
+    fontSize: tight ? 14 : 15,
+    letterSpacing: tight ? '-.015em' : 0,
     cursor: 'pointer',
     color: linkColor,
     borderBottom: `1px solid ${active ? (dark ? '#fff' : C.ink) : 'transparent'}`,
@@ -130,11 +130,11 @@ export function Nav() {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: 'clamp(12px,1.4vw,20px)',
+            gap: 'clamp(16px,2vw,28px)',
           }}
         >
           {PRIMARY.map((l) => (
-            <Link key={l.href} href={l.href} style={navLinkStyle(pathname === l.href)}>
+            <Link key={l.href} href={l.href} style={navLinkStyle(pathname === l.href, l.href === '/playground')}>
               {l.label}
             </Link>
           ))}
@@ -150,12 +150,12 @@ export function Nav() {
                 setDdOpen((o) => !o);
               }}
               style={{
-                ...navLinkStyle(aboutActive),
+                ...navLinkStyle(aboutActive, true),
                 background: 'transparent',
                 borderTop: 0,
                 borderLeft: 0,
                 borderRight: 0,
-                borderBottom: navLinkStyle(aboutActive).borderBottom,
+                borderBottom: navLinkStyle(aboutActive, true).borderBottom,
                 fontFamily: 'inherit',
                 display: 'flex',
                 alignItems: 'center',

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { C, mono, sans, ctaSolid } from '@/lib/ui';
 
 const para: React.CSSProperties = {
-  fontSize: 'clamp(12px,1.1vw,16px)',
+  fontSize: '16px',
   lineHeight: 1.75,
   color: C.body,
 };
@@ -10,7 +10,7 @@ const h2: React.CSSProperties = {
   fontFamily: sans,
   fontWeight: 200,
   fontSize: 'clamp(21px,2.8vw,37px)',
-  lineHeight: 1.1,
+  lineHeight: 1.08,
   letterSpacing: '-.02em',
   margin: 0,
 };
@@ -37,7 +37,7 @@ export default function ArticlePage() {
           484 certification scripts. 300+ certified claims. What the program is
           and why it exists.
         </h1>
-        <p style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, margin: 0 }}>By the Ontigon team.</p>
+        <p style={{ fontSize: '16px', lineHeight: 1.7, color: C.body, margin: 0 }}>By the Ontigon team.</p>
       </section>
 
       <div style={{ maxWidth: 860, margin: '0 auto', padding: '0 clamp(32px,5vw,64px) clamp(80px,12vh,160px)' }}>
@@ -88,7 +88,7 @@ export default function ArticlePage() {
 
           <div style={{ background: '#f1f1f2', border: `1px solid ${C.ink}`, padding: 'clamp(32px,3.5vw,40px)' }}>
             <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.14em', color: C.mute, marginBottom: 16 }}>SELECTED CERTIFIED RESULTS</div>
-            <div style={{ display: 'flex', flexDirection: 'column', borderTop: '1px solid rgba(26,26,28,.1)' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', borderTop: `1px solid ${C.hair}` }}>
               {CERTS.map(([id, desc], i) => (
                 <div
                   key={id}
@@ -97,7 +97,7 @@ export default function ArticlePage() {
                     gridTemplateColumns: '1fr 1fr',
                     gap: 24,
                     padding: '16px 0',
-                    borderBottom: i < CERTS.length - 1 ? '1px solid rgba(26,26,28,.1)' : undefined,
+                    borderBottom: i < CERTS.length - 1 ? `1px solid ${C.hair}` : undefined,
                   }}
                 >
                   <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.04em', color: C.mute, whiteSpace: 'nowrap' }}>{id}</span>
@@ -123,7 +123,7 @@ export default function ArticlePage() {
           </p>
 
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', paddingTop: 16 }}>
-            <Link href="/results" style={{ cursor: 'pointer', border: '1px solid rgba(26,26,28,.35)', color: C.ink, fontSize: 16, letterSpacing: '.04em', padding: '16px 24px', borderRadius: 1 }}>
+            <Link href="/results" style={{ cursor: 'pointer', border: `1px solid ${C.ink}`, color: C.ink, fontSize: 16, letterSpacing: '.04em', padding: '16px 24px', borderRadius: 1 }}>
               See all results&nbsp;→
             </Link>
             <Link href="/investors" style={{ ...ctaSolid, fontSize: 14, padding: '14px 26px' }}>

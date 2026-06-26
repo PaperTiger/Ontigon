@@ -10,7 +10,7 @@ const twoCol: React.CSSProperties = {
   borderTop: `1px solid ${C.hair}`,
 };
 const colBody: React.CSSProperties = {
-  fontSize: 'clamp(12px,1.1vw,16px)',
+  fontSize: '16px',
   lineHeight: 1.7,
   color: C.body,
   maxWidth: '58ch',

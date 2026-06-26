@@ -398,7 +398,13 @@ export function HopfHero() {
         <div
           ref={hintRef}
           data-scrollhint=""
-          onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
+          onClick={() => {
+            const hero = heroRef.current;
+            if (!hero) return;
+            // Phase B (stats) is fully in view at p≈0.65; hero is 320vh, sticky viewport is 1vh
+            const target = hero.offsetTop + (hero.offsetHeight - window.innerHeight) * 0.65;
+            window.scrollTo({ top: target, behavior: 'smooth' });
+          }}
           style={{
             position: 'absolute',
             left: 0,

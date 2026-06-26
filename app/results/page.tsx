@@ -90,7 +90,7 @@ export default function ResultsPage() {
         <Reveal
           as="p"
           delay={120}
-          style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: 0 }}
+          style={{ fontSize: 16, lineHeight: 1.7, color: C.body, maxWidth: '58ch', margin: 0 }}
         >
           Every claim has a falsifier: an experiment designed to show the result
           is wrong. 484 certification scripts. 300+ certified claims. If
@@ -130,7 +130,7 @@ export default function ResultsPage() {
             <BarRow cols="160px 1fr 72px" name="With sleep arch." fill={100} color={C.accent} value="100%" />
             <BarRow cols="160px 1fr 72px" name="Without sleep" fill={15} color={C.ink} value="15%" dim />
           </div>
-          <p style={{ fontFamily: sans, fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.45, color: C.body, maxWidth: '42ch', margin: 0 }}>
+          <p style={{ fontFamily: sans, fontSize: '16px', lineHeight: 1.45, color: C.body, maxWidth: '42ch', margin: 0 }}>
             The 85-point gap is not incidental. Sleep is causally load-bearing.
           </p>
         </Reveal>
@@ -183,7 +183,7 @@ export default function ResultsPage() {
             all derived from geometric structure. Verified on commodity
             hardware.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: C.hair, border: `1px solid ${C.hair}`, maxWidth: 760 }} data-r="">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: C.ink, border: `1px solid ${C.ink}`, maxWidth: 760 }} data-r="">
             <div style={{ background: '#f1f1f2', padding: 32 }}>
               <div style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(37px,5vw,65px)', lineHeight: 1 }}>16/16</div>
               <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.06em', color: C.mute, marginTop: 12 }}>
@@ -197,7 +197,7 @@ export default function ResultsPage() {
               </div>
             </div>
           </div>
-          <p style={{ fontFamily: sans, fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.45, color: C.body, maxWidth: '38ch', margin: '32px 0 0' }}>
+          <p style={{ fontFamily: sans, fontSize: '16px', lineHeight: 1.45, color: C.body, maxWidth: '38ch', margin: '32px 0 0' }}>
             This was not the goal. It is what the geometry produced.
           </p>
         </Reveal>
@@ -205,7 +205,7 @@ export default function ResultsPage() {
         {/* program scale */}
         <Reveal style={sectionPad}>
           <h2 style={{ ...h2row, margin: '0 0 40px' }}>Program scale</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(150px,1fr))', gap: 1, background: C.hair, border: `1px solid ${C.hair}` }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(150px,1fr))', gap: 1, background: C.ink, border: `1px solid ${C.ink}` }}>
             {[
               ['484', 'certification scripts'],
               ['300+', 'certified claims'],
