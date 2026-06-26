@@ -50,7 +50,7 @@ export default function HomePage() {
       <section
         data-num="02"
         style={{
-          background: '#0a0a0b',
+          background: '#000',
           borderTop: '1px solid rgba(255,255,255,.08)',
           padding:
             'clamp(80px,14vh,192px) clamp(32px,5vw,64px) clamp(48px,6vh,64px)',
@@ -61,7 +61,7 @@ export default function HomePage() {
             style={{
               fontFamily: mono,
               fontSize: 12,
-              letterSpacing: '.26em',
+              letterSpacing: '.1em',
               color: 'rgba(255,255,255,.35)',
               textTransform: 'uppercase',
               marginBottom: 24,
@@ -135,7 +135,7 @@ export default function HomePage() {
       {/* SECTION 2 continued: three-card grid */}
       <section
         style={{
-          background: '#0a0a0b',
+          background: '#000',
           padding:
             'clamp(48px,8vh,96px) clamp(32px,5vw,64px) clamp(80px,14vh,192px)',
         }}
@@ -174,7 +174,7 @@ export default function HomePage() {
               <Reveal
                 key={c.n}
                 delay={c.d}
-                style={{ background: '#0a0a0b', padding: 'clamp(32px,3vw,48px)' }}
+                style={{ background: '#000', padding: 'clamp(32px,3vw,48px)' }}
               >
                 <div style={cardNum}>{c.n}</div>
                 <h3 style={cardHead}>{c.h}</h3>
@@ -197,7 +197,7 @@ export default function HomePage() {
                 fontSize: 'clamp(21px,2.8vw,49px)',
                 lineHeight: 1.1,
                 letterSpacing: '-.015em',
-                color: 'rgba(255,255,255,.48)',
+                color: '#ffffff',
                 margin: 0,
               }}
             >
@@ -212,7 +212,7 @@ export default function HomePage() {
         data-num="03"
         style={{
           borderTop: `1px solid ${C.hair}`,
-          background: '#1a1a1c',
+          background: '#000',
           color: '#f1f1f2',
           padding: 'clamp(80px,14vh,192px) clamp(32px,5vw,64px)',
         }}
@@ -233,7 +233,7 @@ export default function HomePage() {
               style={{
                 fontFamily: mono,
                 fontSize: 12,
-                letterSpacing: '.26em',
+                letterSpacing: '.1em',
                 color: '#7a7a82',
                 textTransform: 'uppercase',
                 marginBottom: 24,
@@ -285,7 +285,7 @@ export default function HomePage() {
                   border: '1px solid rgba(255,255,255,.3)',
                   color: '#fff',
                   fontSize: 13.5,
-                  letterSpacing: '.02em',
+                  letterSpacing: '.04em',
                   padding: '16px 24px',
                   borderRadius: 1,
                 }}
@@ -299,7 +299,7 @@ export default function HomePage() {
                   border: '1px solid rgba(255,255,255,.3)',
                   color: '#fff',
                   fontSize: 13.5,
-                  letterSpacing: '.02em',
+                  letterSpacing: '.04em',
                   padding: '16px 24px',
                   borderRadius: 1,
                 }}
@@ -357,7 +357,7 @@ export default function HomePage() {
                   fontSize: 12,
                   letterSpacing: '.14em',
                   color: '#f1f1f2',
-                  background: '#1a1a1c',
+                  background: '#000',
                   padding: '6px 12px',
                 }}
               >
@@ -451,7 +451,7 @@ export default function HomePage() {
               fontWeight: 200,
               fontSize: 'clamp(16px,2vw,28px)',
               lineHeight: 1.5,
-              color: C.body,
+              color: C.ink,
               maxWidth: '34ch',
               margin: '0 0 40px',
               textAlign: 'left',
@@ -466,10 +466,10 @@ export default function HomePage() {
               style={{
                 cursor: 'pointer',
                 display: 'inline-block',
-                background: '#1a1a1c',
-                color: '#f1f1f2',
+                background: '#292ec2',
+                color: '#ffffff',
                 fontSize: 16,
-                letterSpacing: '.02em',
+                letterSpacing: '.04em',
                 padding: '16px 32px',
                 borderRadius: 1,
               }}

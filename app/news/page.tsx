@@ -105,7 +105,7 @@ export default function NewsPage() {
         >
           <div>
             <div style={{ display: 'flex', gap: 16, alignItems: 'center', marginBottom: 22, flexWrap: 'wrap' }}>
-              <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.14em', color: '#fff', background: C.ink, padding: '4px 10px' }}>RESEARCH</span>
+              <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.1em', color: '#fff', background: C.accent, padding: '4px 10px' }}>RESEARCH</span>
               <time style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.08em', color: C.mute }}>June 2026</time>
             </div>
             <h2 style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(28px,3.2vw,49px)', lineHeight: 1.06, letterSpacing: '-.02em', margin: '0 0 20px' }}>
@@ -118,11 +118,11 @@ export default function NewsPage() {
               designed to prove it wrong. Here&apos;s how it works and what
               it&apos;s produced.
             </p>
-            <Link href="/news/certification-program" style={{ cursor: 'pointer', fontSize: 16, letterSpacing: '.02em', borderBottom: `1px solid ${C.ink}`, paddingBottom: 2 }}>
+            <Link href="/news/certification-program" style={{ cursor: 'pointer', fontSize: 16, letterSpacing: '.04em', borderBottom: `1px solid ${C.ink}`, paddingBottom: 2 }}>
               Read the results&nbsp;→
             </Link>
           </div>
-          <div style={{ background: '#0a0a0b', aspectRatio: '4/3', overflow: 'hidden', position: 'relative' }}>
+          <div style={{ background: '#000', aspectRatio: '4/3', overflow: 'hidden', position: 'relative' }}>
             <FeaturedArt />
           </div>
         </Reveal>
@@ -151,13 +151,14 @@ export default function NewsPage() {
                 padding: 'clamp(24px,2.8vw,40px)',
                 display: 'flex',
                 flexDirection: 'column',
+                aspectRatio: '4/3',
               }}
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 18, gap: 12, flexWrap: 'wrap' }}>
-                <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.14em', color: C.mute, border: '1px solid rgba(26,25,22,.18)', padding: '3px 8px' }}>{a.cat}</span>
+                <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.1em', color: C.accent }}>{a.cat}</span>
                 <time style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.06em', color: C.decor }}>{a.date}</time>
               </div>
-              <h3 style={{ fontFamily: sans, fontWeight: 300, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.15, letterSpacing: '-.01em', margin: '0 0 12px' }}>
+              <h3 style={{ fontFamily: sans, fontWeight: 300, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.15, letterSpacing: '-.01em', margin: '0 0 clamp(20px,3vh,32px)' }}>
                 {a.title}
               </h3>
               <p style={{ fontSize: 16, lineHeight: 1.65, color: C.mute2, margin: '0 0 20px', flex: 1 }}>{a.body}</p>
@@ -170,10 +171,10 @@ export default function NewsPage() {
 
         {/* CTA row */}
         <Reveal style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 24, paddingTop: 48 }}>
-          <p style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.4, color: C.body, maxWidth: '32ch', margin: 0 }}>
+          <p style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.4, color: C.ink, maxWidth: '32ch', margin: 0 }}>
             Want the full certification inventory and technical materials?
           </p>
-          <Link href="/investors" style={{ cursor: 'pointer', display: 'inline-block', background: C.ink, color: C.bg, fontSize: 16, letterSpacing: '.02em', padding: '16px 32px', borderRadius: 1 }}>
+          <Link href="/investors" style={{ cursor: 'pointer', display: 'inline-block', background: '#292ec2', color: '#fff', fontSize: 16, letterSpacing: '.04em', padding: '16px 32px', borderRadius: 1 }}>
             Request Access&nbsp;→
           </Link>
         </Reveal>

@@ -1,3 +1,4 @@
+'use client';
 import Link from 'next/link';
 import { Logo } from './Logo';
 import { mono, sans } from '@/lib/ui';
@@ -38,21 +39,21 @@ const COLUMNS = [
 const label: React.CSSProperties = {
   fontFamily: mono,
   fontSize: 12,
-  letterSpacing: '.18em',
-  color: 'rgba(255,255,255,.32)',
+  letterSpacing: '.1em',
+  color: 'rgba(255,255,255,.65)',
   textTransform: 'uppercase',
   marginBottom: 16,
 };
 
 const linkStyle: React.CSSProperties = {
-  fontSize: 16,
-  color: 'rgba(255,255,255,.55)',
+  fontSize: 14,
+  color: '#f1f1f2',
   cursor: 'pointer',
 };
 
 export function Footer() {
   return (
-    <footer style={{ background: '#0a0a0b', color: '#f1f1f2' }}>
+    <footer style={{ background: '#000', color: '#f1f1f2' }}>
 
       {/* nav columns */}
       <div
@@ -87,7 +88,7 @@ export function Footer() {
         style={{
           maxWidth: 1320,
           margin: '0 auto',
-          padding: 'clamp(64px,10vh,96px) clamp(32px,5vw,64px) clamp(48px,6vh,64px)',
+          padding: 'clamp(96px,14vh,160px) clamp(32px,5vw,64px) clamp(48px,6vh,64px)',
           display: 'flex',
           alignItems: 'flex-end',
           justifyContent: 'space-between',
@@ -99,14 +100,13 @@ export function Footer() {
         <p
           style={{
             fontFamily: sans,
-            fontWeight: 200,
-            fontSize: 'clamp(16px,1.8vw,24px)',
-            lineHeight: 1.4,
-            letterSpacing: '-.01em',
-            color: 'rgba(255,255,255,.48)',
+            fontWeight: 300,
+            fontSize: 14,
+            lineHeight: 1,
+            letterSpacing: '.01em',
+            color: '#f1f1f2',
             margin: 0,
-            textAlign: 'right',
-            maxWidth: '16ch',
+            whiteSpace: 'nowrap',
           }}
         >
           Join the quantum class
@@ -118,7 +118,7 @@ export function Footer() {
         style={{
           maxWidth: 1320,
           margin: '0 auto',
-          padding: '24px clamp(32px,5vw,64px)',
+          padding: '20px clamp(32px,5vw,64px)',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
@@ -126,12 +126,24 @@ export function Footer() {
           gap: 16,
         }}
       >
-        <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.06em', color: 'rgba(255,255,255,.22)' }}>
-          ontigon.ai · 17 patents pending · June 2026
+        <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: '.06em', color: 'rgba(255,255,255,.65)' }}>
+          © 2026 Ontigon. All rights reserved.
         </span>
-        <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.06em', color: 'rgba(255,255,255,.22)' }}>
-          Commodity GPU hardware, today.
-        </span>
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          style={{
+            fontFamily: mono,
+            fontSize: 11,
+            letterSpacing: '.1em',
+            color: '#ffffff',
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer',
+            padding: 0,
+          }}
+        >
+          ↑ Back to top
+        </button>
       </div>
 
     </footer>

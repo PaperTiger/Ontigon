@@ -30,7 +30,7 @@ export default function ArticlePage() {
           ← News &amp; Updates
         </Link>
         <div style={{ display: 'flex', gap: 14, alignItems: 'center', marginBottom: 28, flexWrap: 'wrap' }}>
-          <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.14em', color: '#f1f1f2', background: C.ink, padding: '4px 10px' }}>RESEARCH</span>
+          <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.14em', color: '#f1f1f2', background: C.accent, padding: '4px 10px' }}>RESEARCH</span>
           <time style={{ fontFamily: mono, fontSize: 12, letterSpacing: '.08em', color: C.mute }}>June 2026</time>
         </div>
         <h1 style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(34px,5vw,72px)', lineHeight: 1.04, letterSpacing: '-.025em', margin: '0 0 32px' }}>
@@ -123,7 +123,7 @@ export default function ArticlePage() {
           </p>
 
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', paddingTop: 16 }}>
-            <Link href="/results" style={{ cursor: 'pointer', border: '1px solid rgba(26,26,28,.35)', color: C.ink, fontSize: 16, letterSpacing: '.02em', padding: '16px 24px', borderRadius: 1 }}>
+            <Link href="/results" style={{ cursor: 'pointer', border: '1px solid rgba(26,26,28,.35)', color: C.ink, fontSize: 16, letterSpacing: '.04em', padding: '16px 24px', borderRadius: 1 }}>
               See all results&nbsp;→
             </Link>
             <Link href="/investors" style={{ ...ctaSolid, fontSize: 14, padding: '14px 26px' }}>

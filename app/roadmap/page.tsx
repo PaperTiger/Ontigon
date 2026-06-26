@@ -5,7 +5,7 @@ import { C, mono, sans, eyebrow, ctaSolid } from '@/lib/ui';
 const stageLabel = (color: string): React.CSSProperties => ({
   fontFamily: mono,
   fontSize: 12,
-  letterSpacing: '.18em',
+  letterSpacing: '.1em',
   textTransform: 'uppercase',
   color,
   marginBottom: 16,
@@ -87,7 +87,7 @@ export default function RoadmapPage() {
               dynamics at scale: that is the open question. We say this because it
               is true.
             </p>
-            <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.5, color: C.mute2, maxWidth: '44ch', margin: 0 }}>
+            <p style={{ fontFamily: sans, fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.5, color: C.mute2, maxWidth: '44ch', margin: 0 }}>
               The geometry is right. We are proving the last link in the chain.
             </p>
           </Reveal>

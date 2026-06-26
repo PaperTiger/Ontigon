@@ -257,7 +257,7 @@ export function HopfHero() {
             style={{
               fontFamily: mono,
               fontSize: 12,
-              letterSpacing: '.34em',
+              letterSpacing: '.1em',
               textTransform: 'uppercase',
               color: '#fff',
               marginBottom: 32,
@@ -312,7 +312,7 @@ export function HopfHero() {
             }}
           >
             The AI industry chose to scale.{' '}
-            <span style={{ color: 'rgba(255,255,255,.5)' }}>
+            <span style={{ color: '#ffffff' }}>
               We chose a different geometry.
             </span>
           </h2>
@@ -329,10 +329,10 @@ export function HopfHero() {
               href="/investors"
               style={{
                 cursor: 'pointer',
-                background: '#fff',
-                color: '#0a0a0b',
+                background: '#292ec2',
+                color: '#ffffff',
                 fontSize: 16,
-                letterSpacing: '.02em',
+                letterSpacing: '.04em',
                 padding: '16px 32px',
                 borderRadius: 1,
               }}
@@ -346,7 +346,7 @@ export function HopfHero() {
                 border: '1px solid rgba(255,255,255,.4)',
                 color: '#fff',
                 fontSize: 16,
-                letterSpacing: '.02em',
+                letterSpacing: '.04em',
                 padding: '16px 32px',
                 borderRadius: 1,
               }}
@@ -398,6 +398,7 @@ export function HopfHero() {
         <div
           ref={hintRef}
           data-scrollhint=""
+          onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
           style={{
             position: 'absolute',
             left: 0,
@@ -406,10 +407,10 @@ export function HopfHero() {
             textAlign: 'center',
             fontFamily: mono,
             fontSize: 11,
-            letterSpacing: '.24em',
+            letterSpacing: '.1em',
             color: 'rgba(255,255,255,.4)',
             textTransform: 'uppercase',
-            pointerEvents: 'none',
+            cursor: 'pointer',
           }}
         >
           Scroll ↓

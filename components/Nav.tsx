@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { Logo } from './Logo';
-import { C, mono } from '@/lib/ui';
+import { C, mono, sans } from '@/lib/ui';
 
 const PRIMARY = [
   { href: '/science', label: 'Science' },
@@ -74,11 +74,10 @@ export function Nav() {
   const linkColor = dark ? 'rgba(255,255,255,.82)' : C.ink;
 
   const navLinkStyle = (active: boolean): React.CSSProperties => ({
-    fontSize: 13.5,
-    letterSpacing: '.02em',
+    fontSize: 15,
+    letterSpacing: 0,
     cursor: 'pointer',
     color: linkColor,
-    opacity: active ? 1 : 0.62,
     borderBottom: `1px solid ${active ? (dark ? '#fff' : C.ink) : 'transparent'}`,
     paddingBottom: 2,
     transition: 'color .5s ease',
@@ -131,7 +130,7 @@ export function Nav() {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: 'clamp(18px,3vw,40px)',
+            gap: 'clamp(12px,1.4vw,20px)',
           }}
         >
           {PRIMARY.map((l) => (
@@ -190,7 +189,7 @@ export function Nav() {
                 top: 'calc(100% + 4px)',
                 right: -16,
                 minWidth: 180,
-                background: dark ? '#0a0a0b' : '#f1f1f2',
+                background: dark ? '#000' : '#f1f1f2',
                 border: `1px solid ${
                   dark ? 'rgba(255,255,255,.16)' : 'rgba(26,25,22,.14)'
                 }`,
@@ -209,8 +208,8 @@ export function Nav() {
                   style={{
                     display: 'block',
                     padding: '10px 20px',
-                    fontSize: 13.5,
-                    letterSpacing: '.01em',
+                    fontSize: 15,
+                    letterSpacing: 0,
                     cursor: 'pointer',
                     color: linkColor,
                   }}
@@ -225,10 +224,11 @@ export function Nav() {
             href="/investors"
             data-nav-cta=""
             style={{
-              fontFamily: mono,
-              fontSize: 12.5,
-              letterSpacing: '.08em',
+              fontFamily: sans,
+              fontSize: 14,
+              letterSpacing: '.04em',
               cursor: 'pointer',
+              background: 'transparent',
               color: dark ? '#fff' : C.ink,
               border: `1px solid ${dark ? 'rgba(255,255,255,.5)' : C.ink}`,
               padding: '9px 16px',

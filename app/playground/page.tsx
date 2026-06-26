@@ -87,7 +87,7 @@ export default function PlaygroundPage() {
             paddingTop: 40,
           }}
         >
-          <p style={{ fontFamily: sans, fontWeight: 200, fontStyle: 'italic', fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.4, color: C.body, maxWidth: '30ch', margin: 0 }}>
+          <p style={{ fontFamily: sans, fontWeight: 200, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.4, color: C.ink, maxWidth: '30ch', margin: 0 }}>
             Some demos require access. We&apos;ll unlock them when we talk.
           </p>
           <Link href="/investors" style={ctaSolid}>

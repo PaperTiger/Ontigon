@@ -64,16 +64,16 @@ export default function SciencePage() {
           style={{
             fontFamily: sans,
             fontWeight: 200,
-            fontSize: 'clamp(16px,2vw,28px)',
-            lineHeight: 1.5,
+            fontSize: 'clamp(12px,1.1vw,16px)',
+            lineHeight: 1.7,
             color: C.body,
-            maxWidth: '46ch',
+            maxWidth: '52ch',
             margin: 0,
           }}
         >
           The AI field spent a decade making models bigger. We spent seven years
           asking whether a different geometric substrate could make the size
-          question <span style={{ fontStyle: 'italic' }}>irrelevant.</span>
+          question <span style={{ }}>irrelevant.</span>
         </Reveal>
       </section>
 
@@ -105,7 +105,7 @@ export default function SciencePage() {
             <div
               style={{
                 fontFamily: sans,
-                fontStyle: 'italic',
+               
                 fontSize: 'clamp(21px,2.2vw,28px)',
                 lineHeight: 1.35,
                 borderLeft: `2px solid ${C.ink}`,
@@ -143,14 +143,15 @@ export default function SciencePage() {
                   key={t}
                   style={{
                     display: 'grid',
-                    gridTemplateColumns: 'auto 1fr',
-                    gap: 24,
-                    padding: '24px 0',
+                    gridTemplateColumns: '1fr 1fr',
+                    gap: 'clamp(24px,4vw,48px)',
+                    padding: 'clamp(24px,3vh,32px) 0',
                     borderBottom: `1px solid ${C.hair}`,
+                    alignItems: 'baseline',
                   }}
                 >
-                  <div style={{ fontFamily: sans, fontSize: 22 }}>{t}</div>
-                  <div style={{ fontSize: 15, lineHeight: 1.6, color: C.mute2, maxWidth: '50ch' }}>
+                  <div style={{ fontFamily: sans, fontWeight: 400, fontSize: 'clamp(18px,1.8vw,24px)', lineHeight: 1.2 }}>{t}</div>
+                  <div style={{ fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.7, color: C.body }}>
                     {d}
                   </div>
                 </div>
@@ -163,7 +164,7 @@ export default function SciencePage() {
                 color: C.mute,
                 margin: '24px 0 0',
                 maxWidth: '54ch',
-                fontStyle: 'italic',
+               
                 fontFamily: sans,
               }}
             >
@@ -177,7 +178,7 @@ export default function SciencePage() {
       {/* what geometry produces (dark ink) */}
       <section
         style={{
-          background: '#1a1a1c',
+          background: '#000',
           color: '#f1f1f2',
           padding: 'clamp(64px,12vh,128px) clamp(32px,5vw,64px)',
           marginTop: 40,
@@ -188,7 +189,7 @@ export default function SciencePage() {
             style={{
               fontFamily: mono,
               fontSize: 12,
-              letterSpacing: '.26em',
+              letterSpacing: '.1em',
               color: '#7a7a82',
               textTransform: 'uppercase',
               marginBottom: 24,
@@ -242,7 +243,7 @@ export default function SciencePage() {
                 d: 200,
               },
             ].map((c) => (
-              <Reveal key={c.n} delay={c.d} style={{ background: '#1a1a1c', padding: 'clamp(32px,3vw,48px)' }}>
+              <Reveal key={c.n} delay={c.d} style={{ background: '#000', padding: 'clamp(32px,3vw,48px)' }}>
                 <div style={emergeNum}>{c.n}</div>
                 <h3 style={emergeHead}>{c.h}</h3>
                 <p style={emergeBody}>{c.p}</p>

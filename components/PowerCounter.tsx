@@ -80,7 +80,7 @@ export function PowerCounter() {
               style={{
                 fontFamily: mono,
                 fontSize: 12,
-                letterSpacing: '.26em',
+                letterSpacing: '.1em',
                 color: C.mute,
                 textTransform: 'uppercase',
                 marginBottom: 24,

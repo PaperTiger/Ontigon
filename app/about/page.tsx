@@ -50,7 +50,7 @@ export default function AboutPage() {
           <h2 style={rowHead}>How this started</h2>
           <p style={colBody}>
             Seven years ago the question was not{' '}
-            <span style={{ fontStyle: 'italic', fontFamily: sans }}>
+            <span style={{ fontFamily: sans }}>
               &ldquo;how do we improve AI.&rdquo;
             </span>{' '}
             It was: what is the minimum geometric shape from which intelligence
@@ -71,7 +71,7 @@ export default function AboutPage() {
             </p>
             <p style={colBody}>
               The commercial work generates revenue while the substrate matures.{' '}
-              <span style={{ fontStyle: 'italic', fontFamily: sans }}>
+              <span style={{ fontFamily: sans }}>
                 The substrate is the real bet.
               </span>
             </p>

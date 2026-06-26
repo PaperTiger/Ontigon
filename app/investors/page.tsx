@@ -42,7 +42,7 @@ export default function InvestorsPage() {
             <Reveal
               as="p"
               delay={160}
-              style={{ fontFamily: sans, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.4, color: C.body, maxWidth: '30ch', margin: 0 }}
+              style={{ fontFamily: sans, fontSize: 'clamp(16px,1.8vw,24px)', lineHeight: 1.4, color: C.ink, maxWidth: '30ch', margin: 0 }}
             >
               Tell us who you are and we&apos;ll be in touch.
             </Reveal>

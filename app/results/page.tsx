@@ -110,9 +110,9 @@ export default function ResultsPage() {
             memory tasks, canonicalized I/O, single H100 GPU.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 20, maxWidth: 880 }}>
-            <BarRow cols="120px 1fr 72px" name="DAEMON" fill={100} color={C.ink} value="100%" />
-            <BarRow cols="120px 1fr 72px" name="Transformer" fill={15.2} color={C.decor} value="15.2%" dim />
-            <BarRow cols="120px 1fr 72px" name="LSTM" fill={15.4} color={C.decor} value="15.4%" dim />
+            <BarRow cols="120px 1fr 72px" name="DAEMON" fill={100} color={C.accent} value="100%" />
+            <BarRow cols="120px 1fr 72px" name="Transformer" fill={15.2} color={C.ink} value="15.2%" dim />
+            <BarRow cols="120px 1fr 72px" name="LSTM" fill={15.4} color={C.ink} value="15.4%" dim />
           </div>
         </Reveal>
 
@@ -127,10 +127,10 @@ export default function ResultsPage() {
             written over episodic memory.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 20, maxWidth: 880, marginBottom: 28 }}>
-            <BarRow cols="160px 1fr 72px" name="With sleep arch." fill={100} color={C.ink} value="100%" />
-            <BarRow cols="160px 1fr 72px" name="Without sleep" fill={15} color={C.decor} value="15%" dim />
+            <BarRow cols="160px 1fr 72px" name="With sleep arch." fill={100} color={C.accent} value="100%" />
+            <BarRow cols="160px 1fr 72px" name="Without sleep" fill={15} color={C.ink} value="15%" dim />
           </div>
-          <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.45, color: C.body, maxWidth: '42ch', margin: 0 }}>
+          <p style={{ fontFamily: sans, fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.45, color: C.body, maxWidth: '42ch', margin: 0 }}>
             The 85-point gap is not incidental. Sleep is causally load-bearing.
           </p>
         </Reveal>
@@ -153,7 +153,7 @@ export default function ResultsPage() {
             <p style={{ fontSize: 16, lineHeight: 1.7, color: C.body, maxWidth: '48ch', margin: '0 0 16px' }}>
               Association from physics alone. The system formed associations
               under task pressure with{' '}
-              <span style={{ fontStyle: 'italic', fontFamily: sans }}>no weight updates.</span>{' '}
+              <span style={{ fontFamily: sans }}>no weight updates.</span>{' '}
               No learning rule applied. The geometry required it.
             </p>
             <span style={certLabel}>CERT: RING_03_ASSOC</span>
@@ -197,7 +197,7 @@ export default function ResultsPage() {
               </div>
             </div>
           </div>
-          <p style={{ fontFamily: sans, fontStyle: 'italic', fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.45, color: C.body, maxWidth: '38ch', margin: '32px 0 0' }}>
+          <p style={{ fontFamily: sans, fontSize: 'clamp(12px,1.1vw,16px)', lineHeight: 1.45, color: C.body, maxWidth: '38ch', margin: '32px 0 0' }}>
             This was not the goal. It is what the geometry produced.
           </p>
         </Reveal>

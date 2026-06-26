@@ -25,7 +25,7 @@ export function PlayCard({
       onMouseLeave={() => setHover(false)}
       style={{
         cursor: 'pointer',
-        background: hover ? '#0a0a0b' : '#f1f1f2',
+        background: hover ? '#000' : '#f1f1f2',
         padding: 'clamp(28px,3vw,40px)',
         display: 'flex',
         flexDirection: 'column',
@@ -38,8 +38,8 @@ export function PlayCard({
             style={{
               fontFamily: mono,
               fontSize: 11,
-              letterSpacing: '.14em',
-              color: hover ? 'rgba(255,255,255,.55)' : C.mute,
+              letterSpacing: '.1em',
+              color: hover ? '#fff' : C.accent,
               transition: 'color .35s ease',
             }}
           >
